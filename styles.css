@@ -20,16 +20,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  width: calc(100% - 55px);
+  position: fixed;
+  top: 0;
+  width: calc(100% - 45px);
+  height: 3rem;
+}
+
+.toolbar > a,
+p {
+  padding: 2rem;
 }
 
 body {
   height: 100vh;
-  padding: 2rem;
+  margin: 0;
 }
 
 .headline {
+  padding: 2rem;
   height: 100vh;
   background-image: url(images/header-background-mobile.png);
   background-image: url(images/header-shapes\ mobile.png);
@@ -73,7 +81,6 @@ h2 {
 
 .socials {
   display: flex;
-  border: 2px solid red;
 }
 
 .socials > a {
