@@ -15,6 +15,10 @@ body {
   margin: 4px 0;
 }
 
+.menu-logo {
+  height: 1.3rem;
+}
+
 .logo {
   font-style: normal;
   font-weight: 700;
@@ -32,7 +36,7 @@ body {
   align-items: center;
   position: absolute;
   top: 0;
-  width: calc(100% - 10px);
+  width: calc(90% - 10px);
   height: 3rem;
 }
 
