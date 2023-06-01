@@ -40,7 +40,7 @@ body {
   height: 3rem;
 }
 
-.toolbar > a,
+.toolbar>a,
 p {
   padding: 2rem;
 }
@@ -103,4 +103,90 @@ h2 {
 .socials > ul > li {
   width: 2rem;
   list-style: none;
+}
+
+.container {
+  padding: 24px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.project {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #E5E5E5;
+}
+
+.project>img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.client-name {
+  font-family: "Poppins", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.client>ul>li {
+  font-family: "Poppins", serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7A869A;
+}
+
+.client>ul>span {
+  color: #344563;
+  font-family: "Poppins", serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+}
+
+.about-project {
+  font-family: "Poppins", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #344563;
+}
+
+.buttons > button {
+  font-family: "Poppins", serif;
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-align: left;
+color: #6070FF;
+background-color: #EBEBFF;
+height: 24px;
+border-radius: 8px;
+padding: 4px 12px 4px 12px;
+border-color: transparent;
+}
+
+.see-project {
+  font-family: "Poppins", serif;
+font-size: 17px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #396DF2;
+border: 1px solid #396DF2;
+background-color:#FFFFFF;
+border-radius: 8px;
+padding: 4px 12px 4px 12px;
+height: 48px;
 }
