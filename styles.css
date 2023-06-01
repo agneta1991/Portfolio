@@ -1,3 +1,7 @@
+html{
+  font-family: "Poppins", serif;
+}
+
 .menu-logo div {
   width: 25px;
   height: 3px;
@@ -6,7 +10,6 @@
 }
 
 .logo {
-  font-family: "Poppins", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -41,7 +44,8 @@ body {
   height: 100vh;
   background-image: url(images/header-background-mobile.png);
   background-image: url(images/header-shapes\ mobile.png);
-  background-size: cover;
+  background-size: calc(cover - 10%);
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +57,6 @@ body {
 }
 
 .greeting {
-  font-family: "Poppins", serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -62,7 +65,6 @@ body {
 }
 
 .about {
-  font-family: "Poppins", serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -71,7 +73,6 @@ body {
 }
 
 h2 {
-  font-family: "Poppins", serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
