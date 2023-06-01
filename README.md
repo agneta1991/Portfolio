@@ -59,9 +59,7 @@ Portfolio is a project made out of smaller projects. Specifically in this projec
 A great way to make use of this project is to use it as a template of the future projects. As it has just the set up with limited information which can be edited very easily.
 
 To get a local copy up and running, follow these steps:
-
-To get a local copy up and running follow these simple example steps.
-
+<br>
 - Choose a directory
 - Open a Terminal
 - write git clone https://github.com/agneta1991/Portfolio
