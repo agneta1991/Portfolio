@@ -69,6 +69,18 @@ To get a local copy up and running, follow these steps:
 
 <br>
 
+
+In order to run this project you need:
+
+To get a local copy up and running follow these simple example steps.
+
+- Choose a directory
+- Open a Terminal
+- write git clone https://github.com/agneta1991/Portfolio
+- get into to directory "Portfolio"
+- write: npm install
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
