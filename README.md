@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  <img src="logo.jpg" alt="logo" width="140"  height="auto" />
+  <img src="images/logo.jpg" alt="logo" width="140"  height="auto" />
   <br/>
 
 </div>
@@ -15,12 +15,6 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -66,52 +60,6 @@ A great way to make use of this project is to use it as a template of the future
 
 To get a local copy up and running, follow these steps.
 
-<br>
-
-### Prerequisites
-
-In order to run this project you need:
-
-N/A
-
-<br>
-
-### Setup
-
-Clone this repository to your desired folder:
-
-git clone https://github.com/agneta1991/Portfolio
-
-<br>
-
-### Install
-
-Install this project with:
-
-N/A
-
-<br>
-
-### Usage
-
-To run the project, execute the following command:
-
-N/A
-
-<br>
-
-### Run tests
-
-To run tests, run the following command:
-
-N/A
-<br>
-
-### Deployment
-
-You can deploy this project using:
-
-N/A
 <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

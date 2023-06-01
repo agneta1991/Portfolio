@@ -6,7 +6,7 @@
 }
 
 .logo {
-  font-family: 'Poppins', "Times New Roman", Times, serif;
+  font-family: "Poppins", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -15,14 +15,14 @@
 }
 
 .toolbar {
-  padding: 20px;
+  padding: 17px;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
-  width: calc(100% - 45px);
+  width: calc(100% - 10px);
   height: 3rem;
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 .greeting {
-  font-family: "Poppins", "Times New Roman", Times, serif;
+  font-family: "Poppins", serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -62,7 +62,7 @@ body {
 }
 
 .about {
-  font-family: "Poppins", "Times New Roman", Times, serif;
+  font-family: "Poppins", serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -71,7 +71,7 @@ body {
 }
 
 h2 {
-  font-family: "Poppins", "Times New Roman", Times, serif;
+  font-family: "Poppins", serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -79,10 +79,12 @@ h2 {
   color: #7f8cff;
 }
 
-.socials {
+.socials > ul {
+  padding: 0;
   display: flex;
 }
 
-.socials > a {
-  width: 2rem;
+.socials > ul > li {
+  width: 2.5rem;
+  list-style: none;
 }
