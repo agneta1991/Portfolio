@@ -101,21 +101,21 @@ h2 {
   list-style: none;
 }
 
-.container {
+.container, .about-myself {
   padding: 16px;
   background-color: #FFFFFF;
   border-radius: 16px;
   padding-bottom: 0;
   display: flex;
   flex-direction: column;
-  height: 552px;
-
+  height: auto
 }
 
 .project {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 16px;
   background-color: #E5E5E5;
 }
@@ -125,12 +125,20 @@ h2 {
   width: 100%;
 }
 
+.client {
+  display: flex;
+  flex-direction: column;
+}
+
 .client-name {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0em;
   text-align: left;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  margin-right: 25px;
 }
 
 .client>ul>li {
@@ -140,17 +148,19 @@ h2 {
   letter-spacing: 0em;
   text-align: left;
   color: #7A869A;
+  width: 30%;
 }
 
 .client>ul {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 0;
+  margin: 0;
 }
 
 .client>ul>* {
-  flex: 1;
-  list-style: none;
+  margin: 0;
 }
 
 .client>ul>span {
@@ -159,6 +169,7 @@ h2 {
   font-weight: 600;
   line-height: 16px;
   text-align: left;
+  margin-right: 0;
 }
 
 .about-project {
@@ -168,6 +179,12 @@ h2 {
   text-align: left;
   color: #344563;
   padding: 0;
+  width: 90%;
+}
+.buttons {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
 }
 
 .buttons>ul {
@@ -175,6 +192,7 @@ h2 {
   justify-content: left;
   padding: 0;
   gap: 8px;
+  margin-top: 0;
 }
 
 .buttons>ul>li {
@@ -183,13 +201,12 @@ h2 {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: left;
   color: #6070ff;
   background-color: #ebebff;
-  height: 24px;
   border-radius: 8px;
   padding: 4px 12px 4px 12px;
   border-color: transparent;
+  text-align: center;
 }
 
 .see-project {
@@ -204,4 +221,56 @@ h2 {
   border-radius: 8px;
   padding: 4px 12px 4px 12px;
   height: 48px;
+  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 36px;
+}
+
+.dropbtn {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.dropdown > li {
+  list-style: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent;}
+
+.about-myself > div {
+  padding: 26px;
+  background-image: url(images/Base\ about\ my\ self.png);
+  background-size: calc(cover - 10%);
+  background-position: center;
+}
+.about-myself > div {
+margin: 0;
+padding: 0;
+text-align: left;
 }
