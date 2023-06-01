@@ -15,10 +15,6 @@ body {
   margin: 4px 0;
 }
 
-.menu-logo {
-  height: 1.3rem;
-}
-
 .logo {
   font-style: normal;
   font-weight: 700;
@@ -36,7 +32,7 @@ body {
   align-items: center;
   position: absolute;
   top: 0;
-  width: calc(90% - 10px);
+  width: calc(100% - 10px);
   height: 3rem;
 }
 
@@ -103,82 +99,4 @@ h2 {
 .socials > ul > li {
   width: 2rem;
   list-style: none;
-}
-
-.container {
-  padding: 24px;
-  background-color: #fff;
-  border-radius: 16px;
-}
-
-.project {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  background-color: #e5e5e5;
-}
-
-.project > img {
-  border-radius: 8px;
-  width: 100%;
-}
-
-.client-name {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 44px;
-  text-align: left;
-}
-
-.client > ul > li {
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 16px;
-  text-align: left;
-  color: #7a869a;
-}
-
-.client > ul > span {
-  color: #344563;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 16px;
-  text-align: left;
-}
-
-.about-project {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: #344563;
-}
-
-.buttons > button {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: #6070ff;
-  background-color: #ebebff;
-  height: 24px;
-  border-radius: 8px;
-  padding: 4px 12px 4px 12px;
-  border-color: transparent;
-}
-
-.see-project {
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #396df2;
-  border: 1px solid #396df2;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 4px 12px 4px 12px;
-  height: 48px;
 }
