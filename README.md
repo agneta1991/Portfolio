@@ -79,6 +79,7 @@ To get a local copy up and running follow these simple example steps.
 - write git clone https://github.com/agneta1991/Portfolio
 - get into to directory "Portfolio"
 - write: npm install
+<br>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
