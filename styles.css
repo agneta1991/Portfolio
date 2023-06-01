@@ -1,5 +1,12 @@
-html{
+html {
   font-family: "Poppins", serif;
+}
+
+body {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
 }
 
 .menu-logo div {
@@ -18,7 +25,8 @@ html{
 }
 
 .toolbar {
-  padding: 17px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
@@ -34,26 +42,23 @@ p {
   padding: 2rem;
 }
 
-body {
-  height: 100vh;
-  margin: 0;
-}
-
 .headline {
-  padding: 2rem;
-  height: 100vh;
+  height: calc(100vh - 65px);
   background-image: url(images/header-background-mobile.png);
   background-image: url(images/header-shapes\ mobile.png);
   background-size: calc(cover - 10%);
   background-position: center;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  align-content: center;
+  text-align: center;
 }
 
 .headline > * {
-  padding: 10px;
+  padding: 24px;
+  padding-bottom: 0;
+  margin: 0;
 }
 
 .greeting {
@@ -80,12 +85,17 @@ h2 {
   color: #7f8cff;
 }
 
+.socials {
+  padding-top: 12px;
+}
+
 .socials > ul {
   padding: 0;
+  margin: 0;
   display: flex;
 }
 
 .socials > ul > li {
-  width: 2.5rem;
+  width: 2rem;
   list-style: none;
 }
