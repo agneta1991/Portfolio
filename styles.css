@@ -315,6 +315,22 @@ h2 {
   grid-template-columns: 25% 75%;
 }
 
+.down {
+  display: none;
+}
+
+.right {
+  display: block;
+}
+
+.dropbtn:hover .down {
+  display: block;
+}
+
+.dropbtn:hover .right {
+  display: none;
+}
+
 .fas {
   color: #acb7c3;
 }
