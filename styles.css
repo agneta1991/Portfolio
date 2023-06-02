@@ -3,10 +3,8 @@ html {
 }
 
 body {
-  width: 100%;
-  overflow: hidden;
-  height: 100vh;
   margin: 0;
+  background-color: #f7f7f9;
 }
 
 .menu-logo div {
@@ -44,10 +42,10 @@ p {
 
 .headline {
   height: calc(100vh - 65px);
-  background-image: url(images/header-background-mobile.png);
-  background-image: url(images/header-shapes\ mobile.png);
+  background-image: url(images/header-shapes\ mobile.png), url(images/header-background-mobile.png);
   background-size: calc(cover - 10%);
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -87,12 +85,14 @@ h2 {
 
 .socials {
   padding-top: 12px;
+  width: 100%;
 }
 
 .socials > ul {
   padding: 0;
   margin: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
 }
 
 .socials > ul > li {
