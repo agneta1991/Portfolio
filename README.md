@@ -109,11 +109,9 @@ To get a local copy up and running follow these simple example steps.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🤝 Contributing <a name="contributing"></a>
+## 🤝 Contributing <a name="contributing"></a>Contributions, issues, and feature requests are welcome!
 
-Contributions, issues, and feature requests are welcome!
-
-
+Feel free to check the [issues page](https://github.com/agneta1991/Portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,7 +119,11 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-This is the first mobile first project that has very basic set up.
+if you like my page please show your support and give this page a star!
+<br>
+[![Star](https://img.shields.io/github/stars/agneta1991/portfolio?style=social)](https://github.com/agneta1991/portfolio)
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
