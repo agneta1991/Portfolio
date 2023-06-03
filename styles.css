@@ -24,6 +24,7 @@ body {
 }
 
 .toolbar {
+  position: relative;
   padding-top: 17px;
   padding-bottom: 17px;
   background-color: rgb(255, 255, 255);
@@ -86,6 +87,8 @@ h2 {
 
 .socials {
   padding-top: 12px;
+  padding-right: 0;
+  width: 90%;
   width: 100%;
 }
 
@@ -99,4 +102,5 @@ h2 {
 .socials > ul > li {
   width: 2rem;
   list-style: none;
+  padding: 4px;
 }
