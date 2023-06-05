@@ -351,6 +351,10 @@ h2 {
   text-align: right;
 }
 
-.contact-form {
-  background-image: url(images/Contact\ me.png);
+.wrapper-contact {
+  border-radius: 50px 0 0 0;
+  background: #6070ff;
+  background-image: url(images/contact\ form\ shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
 }
