@@ -350,3 +350,7 @@ h2 {
 .dropbtn > i {
   text-align: right;
 }
+
+.contact-form {
+  background-image: url(images/Contact\ me.png);
+}
