@@ -264,7 +264,6 @@ h2 {
   margin-left: 4%;
   width: 45%;
   padding: 3%;
-  font-family: "Poppins", serif;
 }
 
 .second-text {
@@ -359,9 +358,67 @@ h2 {
   background: #6070ff;
   background-image: url(images/contact\ form\ shapes-mobile.png);
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 240px;
+  background-position: right;
+  }
+
+.wrapper-contact > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+  margin: 0;;
 }
 
-.contact-form {
-  position: relative;
+.contact-para {
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+color: #ebebff;
+}
+
+input[type=text], input[type=email] {
+  font-family: "Poppins", serif;
+  background: #fff;
+  border: 1px solid #CFD8DC;
+  padding: 8px;
+  width: 85%;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+input[type=message] {
+  font-family: "Poppins", serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  display: block;
+  height: 170px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  padding: 8px;
+  width: 85%;
+  border-radius: 8px;
+}
+
+input[type=submit] {
+  font-family: "Poppins", serif;
+  width: 38%;
+  height: 48px;
+  padding: 3%;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 8px;
+  border: 1px solid #396df2;
+  background-color: #fff;
+  color: #396df2;
 }
