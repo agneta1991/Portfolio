@@ -353,13 +353,20 @@ h2 {
   text-align: right;
 }
 
+.contact-form {
+  height: 100vh;
+}
+
 .wrapper-contact {
   border-radius: 50px 0 0 0;
   background: #6070ff;
   background-image: url(images/contact\ form\ shapes-mobile.png);
   background-repeat: no-repeat;
-  background-size: 240px;
   background-position: right;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .wrapper-contact > h1 {
@@ -385,7 +392,8 @@ input[type=email] {
   background: #fff;
   border: 1px solid #cfd8dc;
   padding: 8px;
-  width: 85%;
+  width: 82.4%;
+  height: 68%;
   border-radius: 8px;
   font-size: 17px;
   font-weight: 400;
@@ -394,19 +402,18 @@ input[type=email] {
 }
 
 textarea {
-  display: block;
   font-family: "Poppins", serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
-  height: 170px;
+  height: 262%;
   background: #fff;
   border: 1px solid #cfd8dc;
   padding: 8px;
-  width: 85%;
   border-radius: 8px;
   word-wrap: break-word;
   word-break: break-all;
+  width: 100%;
 }
 
 input[type=submit] {
@@ -428,4 +435,12 @@ input[type=submit] {
 input[type=submit]:hover {
   color: #fff;
   background-color: #4053fc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
 }
