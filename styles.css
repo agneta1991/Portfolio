@@ -360,7 +360,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: 240px;
   background-position: right;
-  }
+}
 
 .wrapper-contact > h1 {
   font-size: 40px;
@@ -368,21 +368,22 @@ h2 {
   line-height: 52px;
   text-align: center;
   color: #fff;
-  margin: 0;;
+  margin: 0;
 }
 
 .contact-para {
-font-size: 20px;
-font-weight: 400;
-line-height: 28px;
-text-align: center;
-color: #ebebff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
 }
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
   font-family: "Poppins", serif;
   background: #fff;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   padding: 8px;
   width: 85%;
   border-radius: 8px;
@@ -398,7 +399,6 @@ textarea {
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
-  display: block;
   height: 170px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -419,7 +419,6 @@ input[type=submit] {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  border: 1px solid;
   border-radius: 8px;
   border: 1px solid #396df2;
   background-color: #fff;
