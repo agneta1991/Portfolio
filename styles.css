@@ -392,7 +392,8 @@ input[type=text], input[type=email] {
   text-align: left;
 }
 
-input[type=message] {
+textarea {
+  display: block;
   font-family: "Poppins", serif;
   font-size: 17px;
   font-weight: 400;
@@ -404,6 +405,8 @@ input[type=message] {
   padding: 8px;
   width: 85%;
   border-radius: 8px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 input[type=submit] {
@@ -421,4 +424,9 @@ input[type=submit] {
   border: 1px solid #396df2;
   background-color: #fff;
   color: #396df2;
+}
+
+input[type=submit]:hover {
+  color: #fff;
+  background-color: #4053fc;
 }
