@@ -251,7 +251,7 @@ h2 {
   justify-content: flex-start;
 }
 
-.about-myself > .headline {
+#about-myself > .headline {
   background-image: none;
 }
 
@@ -353,7 +353,7 @@ h2 {
   text-align: right;
 }
 
-.contact-form {
+#contact-form {
   height: 100vh;
 }
 
@@ -457,4 +457,75 @@ form {
 
 .message-label {
   padding-bottom: 40%;
+}
+
+.toolbar-links{
+  display: none;
+}
+
+@media (min-width:768px) {
+  * {
+    border: 1px solid red;
+  }
+
+.toolbar-links {
+  display: block;
+  
+}
+
+.toolbar {
+  padding-left: 155px;
+  padding-right: 155px;
+  width: 78.1%;
+}
+
+.toolbar > a {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.menu-logo {
+  display: none;
+}
+
+#work {
+  height: 400vh;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-1 {
+  height: 100vh;
+  background-color: #e5e5e5
+}
+
+.headline {
+  background-image:  url(images/desktop-pictures/Header\ bg.png), url(images/desktop-pictures/header\ background\ shape-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 260px;
+  padding-top: 2%;
+  padding-bottom: 0;
+}
+
+#about-myself {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-container {
+  margin: 0;
+  padding: 0;
+}
+
+#contact-form {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
 }
