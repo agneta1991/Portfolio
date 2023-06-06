@@ -367,6 +367,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 65px;
 }
 
 .wrapper-contact > h1 {
@@ -392,7 +393,7 @@ input[type=email] {
   background: #fff;
   border: 1px solid #cfd8dc;
   padding: 8px;
-  width: 96.7%;
+  width: 92%;
   height: 68%;
   border-radius: 8px;
   font-size: 17px;
@@ -414,8 +415,8 @@ textarea {
   border-radius: 8px;
   word-wrap: break-word;
   word-break: break-all;
-  width: 115%;
-  margin-left: -10%;
+  width: 95%;
+  margin-left: -2%;
 }
 
 input[type=submit] {
@@ -432,6 +433,7 @@ input[type=submit] {
   border: 1px solid #396df2;
   background-color: #fff;
   color: #396df2;
+  margin-left: -50%;
 }
 
 input[type=submit]:hover {
