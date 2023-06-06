@@ -5,7 +5,7 @@ html {
 body {
   width: 100%;
   margin: 0;
-  background-color: #f7f7f9;
+  background-color: #fff;
 }
 
 .menu-logo div {
@@ -368,9 +368,10 @@ h2 {
   flex-direction: column;
   justify-content: center;
   padding-top: 65px;
+  margin-top: 40%;
 }
 
-.wrapper-contact > h1 {
+.wrapper-contact > h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
