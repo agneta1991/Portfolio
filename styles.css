@@ -392,7 +392,7 @@ input[type=email] {
   background: #fff;
   border: 1px solid #cfd8dc;
   padding: 8px;
-  width: 82.4%;
+  width: 96.7%;
   height: 68%;
   border-radius: 8px;
   font-size: 17px;
@@ -418,7 +418,7 @@ textarea {
 
 input[type=submit] {
   font-family: "Poppins", serif;
-  width: 100%;
+  width: 45%;
   height: 48px;
   padding: 3.2%;
   font-size: 17px;
