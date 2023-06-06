@@ -418,9 +418,9 @@ textarea {
 
 input[type=submit] {
   font-family: "Poppins", serif;
-  width: 38%;
+  width: 100%;
   height: 48px;
-  padding: 3%;
+  padding: 3.2%;
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
@@ -438,10 +438,18 @@ input[type=submit]:hover {
 }
 
 form {
+  gap: 20px;
   display: flex;
   flex-direction: column;
+  height: 316px;
+  width: 327px;
   align-items: center;
-  gap: 20px;
-  margin: 0;
+  justify-content: center;
+  padding: 3%;
+  position: relative;
+  margin: 3%;
 }
 
+.message-label {
+  padding-bottom: 40%;
+}
