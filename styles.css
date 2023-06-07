@@ -120,7 +120,7 @@ h2 {
   border-radius: 16px;
   padding-bottom: 0;
   flex-direction: column;
-  height: 52vh;
+  height: auto;
   align-items: center;
 }
 
@@ -454,52 +454,39 @@ form {
   padding-bottom: 40%;
 }
 
-.toolbar-links {
-  display: none;
-}
-
-.image-desktop {
-  display: none;
-}
-
-.about-project-desktop {
-  display: none;
-}
-
-.client-name-desktop {
-  display: none;
-}
-
-.name-desktop {
-  display: none;
-}
-
-.li-desktop {
-  display: none;
-}
-
-.project-desktop {
+.toolbar-links,
+.image-desktop,
+.about-project-desktop,
+.client-name-desktop,
+.name-desktop,
+.li-desktop,
+.project-desktop,
+.menu-logo {
   display: none;
 }
 
 @media (min-width: 768px) {
   /* headliner page */
+  .toolbar {
+    padding-left: 10%;
+    width: 90vw;
+    margin-right: 0;
+  }
+
   .toolbar-links {
     color: #344563;
     text-decoration: none;
     display: flex;
-    gap: 30%;
-    margin-right: 16%;
+    justify-content: start;
+    width: 20vw;
+    gap: 4%;
+    margin-right: 0;
+    padding-right: 0;
   }
 
   .toolbar-links > a {
     padding: 0;
     margin: 0;
-    position: relative;
-  }
-
-  .menu-logo {
-    display: none;
   }
 
   #work {
@@ -519,7 +506,7 @@ form {
     background-image: url(images/desktop-pictures/Header\ bg.png), url(images/desktop-pictures/header\ background\ shape-desktop.svg);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 105.9%;
     padding: 20%;
     padding-top: 0;
     padding-bottom: 0;
@@ -552,7 +539,7 @@ form {
   .project {
     padding: 10%;
     padding-bottom: 0;
-    height: 80vh;
+    height: 65vh;
   }
 
   .container {
@@ -561,6 +548,7 @@ form {
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 0;
     height: 53vh;
+    padding-right: 4rem;
   }
 
   .project-1 {
@@ -591,52 +579,23 @@ form {
     padding-right: 0;
   }
 
-  .image-desktop {
-    display: block;
-  }
-
-  .li-desktop {
-    display: block;
-  }
-
-  .li-desktop-ruby {
-    display:initial ;
-  }
-
-  .li-mobile {
-    display: none;
-  }
-
-  .project-mobile {
-    display: none;
-  }
-
-  .project-desktop {
-    display: block;
-  }
-
-  .client-name-desktop {
-    display: block;
-  }
-
-  .client-name-mobile {
-    display: none;
-  }
-
-  .name-mobile {
-    display: none;
-  }
-
+  .image-desktop,
+  .li-desktop,
+  .project-desktop,
+  .client-name-desktop,
   .name-desktop {
     display: block;
   }
 
-  .container > .flip-img {
-    grid-column: 2 / 3;
-  }
-
+  .li-mobile,
+  .project-mobile,
+  .client-name-mobile,
   .image-mobile {
     display: none;
+  }
+
+  .container > .flip-img {
+    grid-column: 2 / 3;
   }
 
   .client-name {
@@ -647,7 +606,8 @@ form {
   }
 
   .container > ul {
-    margin: 5%;
+    margin: 7%;
+    margin-right: 0;
     height: 3vh;
     margin-top: 0;
     margin-bottom: 0;
@@ -681,10 +641,11 @@ form {
   }
 
   .logo,
+  .toolbar-links > a,
   .about,
   h2,
   .about-project {
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     line-height: 1.7;
   }
 
@@ -695,6 +656,7 @@ form {
   .container > ul > li {
     font-size: 1.2vw;
     font-weight: 50;
+    margin: 0;
   }
 
   .buttons > ul > li {
