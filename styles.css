@@ -463,23 +463,28 @@ form {
   display: none;
 }
 
-@media (min-width:768px) {
-  * {
-    border: 1px solid red;
-  }
+.image-desktop {
+  display: none;
+}
 
+@media (min-width:768px) {
+
+  /*headliner page*/
 .toolbar-links {
   display: block;
-  
+  color: #344563;
+  text-decoration: none;
+  display: flex;
+  gap: 32px;
 }
 
 .toolbar {
   padding-left: 155px;
   padding-right: 155px;
-  width: 78.1%;
+  width: 78.5%;
 }
 
-.toolbar > a {
+.toolbar-links > a {
   padding: 0;
   margin: 0;
   position: relative;
@@ -493,11 +498,13 @@ form {
   height: 400vh;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper-1 {
   height: 100vh;
-  background-color: #e5e5e5
+  background-color: #f7f7f9
 }
 
 .headline {
@@ -505,9 +512,15 @@ form {
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 260px;
-  padding-top: 2%;
+  padding: 20%;
+  padding-top: 0;
   padding-bottom: 0;
+  border-radius: 0 0 0 180px;
+  margin-top: -10px;
+}
+
+.headline > * {
+  padding: 12px;
 }
 
 #about-myself {
@@ -527,5 +540,52 @@ form {
   padding: 0;
 }
 
+/* work section */
+.project {
+  padding: 142px;
+  padding-bottom: 0;
+  height: 20%;
+}
 
+.container {
+  border: 1px solid #dfe1e6;
+  grid-template-columns: 50% 50%;
+}
+
+.project-1 {
+  order: 3;
+}
+
+.project-2 {
+  order: 4;
+}
+
+.project-3 {
+  order: 1;
+}
+
+.project-4 {
+  order: 2;
+}
+
+.project > .container > * {
+  border: 1px solid red;
+}
+
+.container > img {
+  width: 544px;
+  grid-row: 1 / 6;
+}
+
+.image-desktop {
+  display: block;
+}
+
+.image-mobile {
+  display: none;
+}
+
+.client-name {
+  height: 200px;
+}
 }
