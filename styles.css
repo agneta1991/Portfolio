@@ -599,6 +599,10 @@ form {
     display: block;
   }
 
+  .li-desktop-ruby {
+    display:initial ;
+  }
+
   .li-mobile {
     display: none;
   }
