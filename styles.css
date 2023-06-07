@@ -97,9 +97,12 @@ h2 {
 }
 
 .socials > ul > li {
-  width: 2rem;
   list-style: none;
   padding: 4px;
+}
+
+.socials > ul > li > a > img {
+  width: 5vw;
 }
 
 .container {
@@ -560,7 +563,7 @@ form {
 
 .container > * {
   margin: 0;
-  padding-left: 24px;
+  padding-left: 2vw;
 }
 
 .container > img {
@@ -615,7 +618,8 @@ margin-bottom: 0;
   margin-top: 0;
   margin-left: 7%;
   padding: 0 1% 0 1%;
-  margin-right: 60%;
+  font-size: 1.3vw;
+  width: 10vw;
 }
 
 .contact-para {
@@ -630,7 +634,8 @@ margin-bottom: 0;
 .about,
 h2,
 .about-project {
-  font-size: 1.5vw;
+  font-size: 1.1vw;
+  line-height: 1.7;
 }
 
 .greeting {
@@ -641,8 +646,22 @@ h2,
   font-size: 2vw;
 }
 
-.container > ul > li,
-.buttons > ul > li {
-  font-size: 1vw;
+.container > ul > li {
+  font-size: 1.2vw;
+  font-weight: 50;
 }
+
+.buttons > ul > li {
+  font-size: 0.8vw;
+  font-weight: 50;
+}
+
+.container > ul > .name {
+  font-size: 1.1vw;
+}
+
+.socials > ul > li > a > img {
+  width: 1.5vw;
+}
+
 }
