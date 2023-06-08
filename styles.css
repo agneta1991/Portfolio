@@ -834,6 +834,7 @@ form {
   input[type=text],
   input[type=email] {
     width: 22vw;
+    padding: 6%;
     height: 1vh;
     font-size: 1.5vw;
     border-radius: 2px;
@@ -853,6 +854,7 @@ form {
     height: 10vh;
     font-size: 1.5vw;
     border-radius: 2px;
+    padding: 6%;
   }
 
   .message-label {
