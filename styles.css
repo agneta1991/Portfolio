@@ -105,6 +105,10 @@ h2 {
   border-radius: 8px;
 }
 
+.container > img {
+  width: 77vw;
+}
+
 .dropdown-content > a > img {
   padding: 12px;
 }
@@ -123,10 +127,6 @@ h2 {
   height: auto;
   align-items: center;
   justify-content: center;
-}
-
-.container > img {
-  width: 77vw;
 }
 
 /* grid item */
@@ -246,6 +246,7 @@ h2 {
   color: #fff;
   background-color: #2230d2;
 }
+
 .second-part {
   background-image: url(images/Base\ about\ my\ self.png);
   background-size: cover;
@@ -434,7 +435,6 @@ textarea {
 input[type=submit] {
   font-family: "Poppins", serif;
   width: 45%;
-  height: 48px;
   padding: 3.2%;
   font-size: 4.5vw;
   font-weight: 500;
@@ -519,7 +519,6 @@ form {
   .wrapper-1 {
     height: 100vh;
     width: 100vw;
-    background-color: #f7f7f9;
     background-image: url(images/desktop-pictures/Header\ bg.png);
     background-color: #fff;
     background-position: center;
@@ -542,7 +541,7 @@ form {
     border-radius: 0 0 0 180px;
     height: 81vh;
     justify-content: start;
-    width: 70vw;;
+    width: 70vw;
   }
 
   .headline > * {
@@ -642,6 +641,7 @@ form {
   .container > ul > .name {
     font-size: 1.25vw;
   }
+
   .about-project {
     margin: 2%;
   }
@@ -655,7 +655,6 @@ form {
   .see-project {
     margin-left: 7%;
     padding: 0 1% 0 1%;
-    font-size: 1.3vw;
     width: 10vw;
     align-self: start;
     font-size: 1.39vw;
@@ -837,14 +836,14 @@ form {
 
   .wrapper-contact > * {
     font-size: 1rem;
-    width: 70vw;
+    width: 75vw;
     padding: 0;
     justify-self: start;
-    border: 1px solid red;
   }
 
   form {
     padding: 0;
+    padding-top: 3%;
     margin: 0;
     width: 45vw;
     height: 30vh;
@@ -860,12 +859,11 @@ form {
   }
 
   input[type=submit] {
-    height: 5vh;
     font-size: 1.3vw;
-    border-radius: 8px;
+    border-radius: 8%;
     margin-left: 0.5%;
     width: 12vw;
-    padding: 0;
+    padding: 2%;
   }
 
   textarea {
