@@ -484,7 +484,7 @@ form {
 @media only screen and (min-width: 768px) {
   /* headliner page */
   .toolbar {
-    width: 100vw;
+    width: 98vw;
     height: 3.4vh;
     position: relative;
     justify-content: space-around;
@@ -517,7 +517,7 @@ form {
   }
 
   .wrapper-1 {
-    height: 98vh;
+    height: 100vh;
     width: 100vw;
     background-color: #f7f7f9;
   }
@@ -536,13 +536,13 @@ form {
     background-position: top;
     background-repeat: no-repeat;
     background-size: 80%;
-    padding: 17%;
+    padding: 15%;
     padding-top: 12%;
     padding-bottom: 0;
     border-radius: 0 0 0 180px;
     height: 81vh;
     justify-content: start;
-    width: 67vw;;
+    width: 68vw;;
   }
 
   .headline > * {
