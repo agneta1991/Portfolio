@@ -125,6 +125,10 @@ h2 {
   justify-content: center;
 }
 
+.container > img {
+  width: 77vw;
+}
+
 /* grid item */
 .container > * {
   margin: 3%;
@@ -132,6 +136,7 @@ h2 {
 
 .project {
   height: 100vh;
+  width: 91vw;
   padding: 16px;
   background-color: #f7f7f9;
   display: flex;
@@ -537,9 +542,10 @@ form {
 
   /* work section */
   .project {
-    padding: 10%;
+    padding: 9%;
     padding-bottom: 0;
-    height: 65vh;
+    height: 60vh;
+    width: 82vw;
   }
 
   .container {
@@ -599,6 +605,9 @@ form {
     display: none;
   }
 
+  .container > img {
+    width: 37vw;
+  }
   .container > .flip-img {
     grid-column: 2 / 3;
   }
@@ -702,6 +711,7 @@ form {
     padding: 8.2% 8.2% 4.2% 8.2%;
     background-color: #fff;
     border-radius: 0 20% 0 0;
+    width: 86vw;
   }
 
   .wrapper-contact > div > h2 {
