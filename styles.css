@@ -33,7 +33,7 @@ body {
   align-items: center;
   top: 0;
   width: 100vw;
-  height: 3rem;
+  height: 5vh;
 }
 
 .toolbar > a,
@@ -484,25 +484,26 @@ form {
 @media only screen and (min-width: 768px) {
   /* headliner page */
   .toolbar {
-    padding-left: 10%;
-    width: 90vw;
-    margin-right: 0;
+    width: 100vw;
+    height: 3.4vh;
+    position: relative;
+    justify-content: space-around;
   }
 
   .toolbar-links {
+    font-size: 0.6vw;
     color: #344563;
     text-decoration: none;
     display: flex;
     justify-content: start;
-    width: 20vw;
+    width: 10vw;
     gap: 4%;
-    margin-right: 0;
-    padding-right: 0;
   }
 
   .toolbar-links > a {
-    padding: 0;
+    font-size: 1vw;
     margin: 0;
+    padding: 0;
   }
 
   #work {
@@ -512,23 +513,36 @@ form {
     display: flex;
     flex-direction: column;
     background-color: #f7f7f9;
+    width: 100vw;
   }
 
   .wrapper-1 {
-    height: 100vh;
+    height: 98vh;
+    width: 100vw;
     background-color: #f7f7f9;
   }
 
+  .about {
+    font-size: 1.3889vw;
+  }
+
+  h2 {
+    font-size: 1.112vw;
+  }
+
   .headline {
-    background-image: url(images/desktop-pictures/Header\ bg.png), url(images/desktop-pictures/header\ background\ shape-desktop.svg);
+    background-image: url(images/desktop-pictures/Header\ bg.png);
+    background-color: #fff;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 105.9%;
-    padding: 20%;
-    padding-top: 0;
+    background-size: 80%;
+    padding: 17%;
+    padding-top: 12%;
     padding-bottom: 0;
     border-radius: 0 0 0 180px;
-    height: 68vh;
+    height: 81vh;
+    justify-content: start;
+    width: 67vw;;
   }
 
   .headline > * {
@@ -584,7 +598,7 @@ form {
   }
 
   .container > img {
-    width: 100%;
+    width: 36.7vw;
     grid-row: 1 / 7;
     padding: 3%;
     padding-right: 0;
@@ -605,9 +619,6 @@ form {
     display: none;
   }
 
-  .container > img {
-    width: 37vw;
-  }
   .container > .flip-img {
     grid-column: 2 / 3;
   }
@@ -616,7 +627,7 @@ form {
     height: 50%;
     align-self: end;
     margin: 2%;
-    font-size: 2.3vw;
+    font-size: 2.78vw;
   }
 
   .container > ul {
@@ -628,6 +639,9 @@ form {
     align-self: center;
   }
 
+  .container > ul > .name {
+    font-size: 1.25vw;
+  }
   .about-project {
     margin: 2%;
   }
@@ -644,6 +658,7 @@ form {
     font-size: 1.3vw;
     width: 10vw;
     align-self: start;
+    font-size: 1.39vw;
   }
 
   .contact {
@@ -651,17 +666,14 @@ form {
   }
 
   .logo,
-  .toolbar-links > a,
-  .about,
-  h2,
   .about-project {
-    font-size: 1.3vw;
+    font-size: 1.112vw;
     line-height: 1.7;
     text-decoration: none;
   }
 
   .greeting {
-    font-size: 3vw;
+    font-size: 3.334vw;
     grid-row: 2/3;
   }
 
@@ -677,7 +689,7 @@ form {
 
   .buttons > ul > li {
     margin: 2%;
-    font-size: 0.8vw;
+    font-size: 0.85vw;
     font-weight: 50;
     padding: 0.07rem 0.3rem 0.07rem 0.3rem;
     border-radius: 0.3rem;
@@ -685,10 +697,6 @@ form {
 
   .buttons > ul {
     margin: 0;
-  }
-
-  .container > ul > .name {
-    font-size: 1.1vw;
   }
 
   .dropdown-content > a > img {
@@ -699,7 +707,7 @@ form {
   }
 
   .socials > ul > li > a > img {
-    width: 1.5vw;
+    width: 1.4vw;
   }
 
   /* about myself */
