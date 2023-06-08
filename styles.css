@@ -382,6 +382,7 @@ h2 {
 .wrapper-contact > div {
   width: 100vw;
 }
+
 .contact-para {
   font-size: 5vw;
   font-weight: 400;
@@ -653,6 +654,7 @@ form {
   .second-text {
     grid-row: 4/6;
   }
+
   .container > ul > li {
     font-size: 1.2vw;
     font-weight: 50;
@@ -675,6 +677,13 @@ form {
     font-size: 1.1vw;
   }
 
+  .dropdown-content > a > img {
+    padding: 0;
+    width: 4.5vw;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
   .socials > ul > li > a > img {
     width: 1.5vw;
   }
@@ -688,6 +697,10 @@ form {
     padding: 8.2% 8.2% 4.2% 8.2%;
     background-color: #fff;
     border-radius: 0 20% 0 0;
+  }
+
+  .wrapper-contact > div > h2 {
+    font-size: 3vw;
   }
 
   #headline-two > h2 {
@@ -730,17 +743,15 @@ form {
     margin: 0;
   }
 
-  .list-of-dropdowns > li:hover .dropdown-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-
-  }
-
   .dropdown-content {
     display: none;
   }
 
+  .list-of-dropdowns > li:hover .dropdown-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
 
   .dropdown-content > a {
     font-size: 1.3vw;
@@ -749,13 +760,6 @@ form {
     display: grid;
     grid-template-rows: 70% 30%;
     padding: 2%;
-  }
-
-  .dropdown-content > a > img {
-    padding: 0;
-    width: 4.5vw;
-    grid-row: 1/2;
-    grid-column: 1/2;
   }
 
   .dropdown-content > a > span {
@@ -790,7 +794,7 @@ form {
     align-items: center;
     width: 55vw;
     height: 70vh;
-    justify-self:flex-start;
+    justify-self: flex-start;
     padding-top: 6%;
   }
 
@@ -799,7 +803,7 @@ form {
     font-size: 1.5vw;
     padding: 0;
     padding-bottom: 2%;
-    line-height:inherit;
+    line-height: inherit;
   }
 
   #contact-form > .wrapper-contact {
@@ -808,13 +812,9 @@ form {
     align-items: center;
   }
 
-  .wrapper-contact > div > h2 {
-  font-size: 3vw;
-  }
-
   .wrapper-contact > * {
     font-size: 1rem;
-    width: 70vw;;
+    width: 70vw;
     padding: 0;
     justify-self: start;
   }
@@ -855,6 +855,4 @@ form {
     margin: 0;
     border-radius: 8px;
   }
-
-
 }
