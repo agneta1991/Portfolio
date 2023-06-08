@@ -267,7 +267,7 @@ h2 {
 #resume {
   margin: 0;
   margin-left: 4%;
-  width: 13vw;
+  width: 44vw;
   padding: 3%;
   grid-row: 9/10;
 }
@@ -370,7 +370,7 @@ h2 {
   margin-top: 40%;
 }
 
-.wrapper-contact > h2 {
+.wrapper-contact > div > h2 {
   font-size: 10.7vw;
   font-weight: 700;
   line-height: 52px;
@@ -393,8 +393,8 @@ input[type=email] {
   background: #fff;
   border: 1px solid #cfd8dc;
   padding: 8px;
-  width: 92%;
-  height: 68%;
+  width: 80vw;
+  height: 3vh;
   border-radius: 8px;
   font-size: 4.5vw;
   font-weight: 400;
@@ -415,8 +415,7 @@ textarea {
   border-radius: 8px;
   word-wrap: break-word;
   word-break: break-all;
-  width: 95%;
-  margin-left: -2%;
+  width: 80vw;
 }
 
 input[type=submit] {
@@ -499,6 +498,7 @@ form {
     padding: 0;
     display: flex;
     flex-direction: column;
+    background-color: #f7f7f9;
   }
 
   .wrapper-1 {
@@ -515,7 +515,7 @@ form {
     padding-top: 0;
     padding-bottom: 0;
     border-radius: 0 0 0 180px;
-    margin-top: -10px;
+    height: 68vh;
   }
 
   .headline > * {
@@ -523,12 +523,6 @@ form {
   }
 
   .wrapper-container {
-    margin: 0;
-    padding: 0;
-  }
-
-  #contact-form {
-    height: 100vh;
     margin: 0;
     padding: 0;
   }
@@ -631,10 +625,6 @@ form {
     align-self: start;
   }
 
-  .contact-para {
-    width: 50%;
-  }
-
   .contact {
     width: 50%;
   }
@@ -682,7 +672,7 @@ form {
     width: 1.5vw;
   }
 
-  /* about myself & contact form */
+  /* about myself */
   #headline-two {
     display: grid;
     grid-template-columns: repeat(2, 40% 60%);
@@ -711,6 +701,11 @@ form {
     align-items: center;
     background-image: none;
     background-color: #f7f7f9;
+  }
+
+  #resume {
+    grid-row: 9/10;
+    width: 13vw;
   }
 
   .dropbtn {
@@ -763,25 +758,83 @@ form {
   }
 
   /* contact form */
-  #contact-form > .wrapper-contact {
-    margin-top: 0;
+
+  #contact-form {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f9;
   }
 
-  .wrapper-contact > h2 {
+  .wrapper-contact {
+    background-image: url(images/desktop-pictures/contact\ form\ background\ shapes.png);
+    background-size: contain;
+    border-radius: 0 0 0 20%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .wrapper-contact > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-para {
+    width: 60vw;
+    font-size: 1rem;
+  }
+
+  #contact-form > .wrapper-contact {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .wrapper-contact > div > h2 {
   font-size: 3vw;
   }
 
   .wrapper-contact > * {
     border: 1px solid red;
     font-size: 1rem;
+    width: 60vw;
+    padding: 0;
   }
 
-  form > * > *{
-    font-size: 1rem;
+  form > div {
+    display: flex;
+    flex-direction: column;
+    height: 0.01vh;
+    border: 1px solid salmon;
   }
 
-  form > input[type=text],
+  input[type=text],
   input[type=email] {
+    width: 30vw;
+    height: 1vh;
     font-size: 1rem;
   }
+
+  input[type=submit] {
+    width: 15vw;
+    height: 10vh;
+    font-size: 1rem;
+  }
+
+  textarea {
+    width: 30vw;
+    height: 15vh;
+    font-size: 1rem;
+  }
+
+  label {
+    border: 1px solid black
+  }
+
+  .message-label {
+    padding: 0;
+    margin: 0;
+  }
+
+
 }
