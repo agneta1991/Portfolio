@@ -234,9 +234,13 @@ h2 {
 
 .see-project:hover {
   color: #fff;
-  background-color: #4053fc;
+  background-color: #6070ff;
 }
 
+.see-project:active {
+  color: #fff;
+  background-color: #2230d2;
+}
 .second-part {
   background-image: url(images/Base\ about\ my\ self.png);
   background-size: cover;
@@ -472,7 +476,7 @@ form {
   display: none;
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   /* headliner page */
   .toolbar {
     padding-left: 10%;
@@ -603,7 +607,7 @@ form {
     height: 50%;
     align-self: end;
     margin: 2%;
-    font-size: 2vw;
+    font-size: 2.3vw;
   }
 
   .container > ul {
@@ -644,6 +648,7 @@ form {
   .about-project {
     font-size: 1.3vw;
     line-height: 1.7;
+    text-decoration: none;
   }
 
   .greeting {
