@@ -379,6 +379,9 @@ h2 {
   margin: 0;
 }
 
+.wrapper-contact > div {
+  width: 100vw;
+}
 .contact-para {
   font-size: 5vw;
   font-weight: 400;
@@ -468,7 +471,7 @@ form {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media only screen and (max-width: 1440px) and (min-width: 768px) {
   /* headliner page */
   .toolbar {
     padding-left: 10%;
@@ -554,6 +557,10 @@ form {
 
   .project-3 {
     order: 1;
+  }
+
+  .project-3 > .container {
+    width: 75vw;
   }
 
   .project-4 {
@@ -684,11 +691,11 @@ form {
   }
 
   #headline-two > h2 {
-    grid-row: 7/8;
+    grid-row: 8/9;
   }
 
   #headline-two > .socials {
-    grid-row: 8/9;
+    grid-row: 9/10;
     align-self: center;
   }
 
@@ -704,8 +711,9 @@ form {
   }
 
   #resume {
-    grid-row: 9/10;
+    grid-row: 10/11;
     width: 13vw;
+    padding: 0;
   }
 
   .dropbtn {
@@ -760,32 +768,42 @@ form {
   /* contact form */
 
   #contact-form {
-    height: 100vh;
+    height: 65vh;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f9;
+    background-color: #fff;
+    margin-top: 10%;
   }
 
   .wrapper-contact {
     background-image: url(images/desktop-pictures/contact\ form\ background\ shapes.png);
     background-size: contain;
-    border-radius: 0 0 0 20%;
-    padding: 0;
+    border-radius: 20% 0 0 0;
+    padding: 3%;
     margin: 0;
+    height: 80vh;
   }
 
   .wrapper-contact > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 55vw;
+    height: 70vh;
+    justify-self:flex-start;
+    padding-top: 6%;
   }
 
   .contact-para {
-    width: 60vw;
-    font-size: 1rem;
+    width: 30vw;
+    font-size: 1.5vw;
+    padding: 0;
+    padding-bottom: 2%;
+    line-height:inherit;
   }
 
   #contact-form > .wrapper-contact {
+    height: 60vh;
     margin-top: 0;
     align-items: center;
   }
@@ -795,45 +813,47 @@ form {
   }
 
   .wrapper-contact > * {
-    border: 1px solid red;
     font-size: 1rem;
-    width: 60vw;
+    width: 70vw;;
     padding: 0;
+    justify-self: start;
   }
 
-  form > div {
-    display: flex;
-    flex-direction: column;
-    height: 0.01vh;
-    border: 1px solid salmon;
+  form {
+    padding: 0;
+    margin: 0;
+    width: 45vw;
+    height: 30vh;
   }
 
   input[type=text],
   input[type=email] {
-    width: 30vw;
+    width: 22vw;
     height: 1vh;
-    font-size: 1rem;
+    font-size: 1.5vw;
+    border-radius: 2px;
   }
 
   input[type=submit] {
-    width: 15vw;
-    height: 10vh;
-    font-size: 1rem;
+    height: 5vh;
+    font-size: 1.5vw;
+    border-radius: 8px;
+    margin-left: 0.5%;
+    width: 12vw;
+    padding: 0;
   }
 
   textarea {
-    width: 30vw;
-    height: 15vh;
-    font-size: 1rem;
-  }
-
-  label {
-    border: 1px solid black
+    width: 22vw;
+    height: 10vh;
+    font-size: 1.5vw;
+    border-radius: 2px;
   }
 
   .message-label {
     padding: 0;
     margin: 0;
+    border-radius: 8px;
   }
 
 
