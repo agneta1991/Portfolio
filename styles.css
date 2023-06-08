@@ -484,7 +484,7 @@ form {
 @media only screen and (min-width: 768px) {
   /* headliner page */
   .toolbar {
-    width: 98vw;
+    width: 100vw;
     height: 3.4vh;
     position: relative;
     justify-content: space-around;
@@ -520,6 +520,10 @@ form {
     height: 100vh;
     width: 100vw;
     background-color: #f7f7f9;
+    background-image: url(images/desktop-pictures/Header\ bg.png);
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .about {
@@ -531,18 +535,14 @@ form {
   }
 
   .headline {
-    background-image: url(images/desktop-pictures/Header\ bg.png);
-    background-color: #fff;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 80%;
+    background-image: none;
     padding: 15%;
     padding-top: 12%;
     padding-bottom: 0;
     border-radius: 0 0 0 180px;
     height: 81vh;
     justify-content: start;
-    width: 68vw;;
+    width: 70vw;;
   }
 
   .headline > * {
@@ -795,11 +795,11 @@ form {
   /* contact form */
 
   #contact-form {
-    height: 65vh;
+    height: 80vh;
     margin: 0;
     padding: 0;
     background-color: #fff;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   .wrapper-contact {
@@ -808,7 +808,7 @@ form {
     border-radius: 20% 0 0 0;
     padding: 3%;
     margin: 0;
-    height: 80vh;
+    height: 100vh;
   }
 
   .wrapper-contact > div {
@@ -830,7 +830,7 @@ form {
   }
 
   #contact-form > .wrapper-contact {
-    height: 60vh;
+    height: 70vh;
     margin-top: 0;
     align-items: center;
   }
@@ -840,6 +840,7 @@ form {
     width: 70vw;
     padding: 0;
     justify-self: start;
+    border: 1px solid red;
   }
 
   form {
@@ -860,7 +861,7 @@ form {
 
   input[type=submit] {
     height: 5vh;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     border-radius: 8px;
     margin-left: 0.5%;
     width: 12vw;
