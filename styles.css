@@ -651,14 +651,14 @@ form {
     grid-row: 2/3;
   }
 
-  .second-text {
-    grid-row: 4/6;
-  }
-  
   .container > ul > li {
     font-size: 1.2vw;
     font-weight: 50;
     margin: 0;
+  }
+
+  .second-text {
+    grid-row: 4/6;
   }
 
   .buttons > ul > li {
