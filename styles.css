@@ -654,7 +654,7 @@ form {
   .second-text {
     grid-row: 4/6;
   }
-
+  
   .container > ul > li {
     font-size: 1.2vw;
     font-weight: 50;
