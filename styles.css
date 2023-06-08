@@ -267,8 +267,9 @@ h2 {
 #resume {
   margin: 0;
   margin-left: 4%;
-  width: 48%;
+  width: 13vw;
   padding: 3%;
+  grid-row: 9/10;
 }
 
 .second-text {
@@ -649,8 +650,12 @@ form {
 
   .greeting {
     font-size: 3vw;
+    grid-row: 2/3;
   }
 
+  .second-text {
+    grid-row: 4/6;
+  }
   .container > ul > li {
     font-size: 1.2vw;
     font-weight: 50;
@@ -680,12 +685,21 @@ form {
   /* about myself & contact form */
   #headline-two {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-    grid-template-rows: repeat(3, 1fr);
-    height: 50vh;
-    padding: 10.2% 8.2% 4.2% 8.2%;
+    grid-template-columns: repeat(2, 40% 60%);
+    grid-template-rows: repeat(9, 5vh);
+    height: 55vh;
+    padding: 8.2% 8.2% 4.2% 8.2%;
     background-color: #fff;
     border-radius: 0 20% 0 0;
+  }
+
+  #headline-two > h2 {
+    grid-row: 7/8;
+  }
+
+  #headline-two > .socials {
+    grid-row: 8/9;
+    align-self: center;
   }
 
   #about-myself {
@@ -701,33 +715,73 @@ form {
 
   .dropbtn {
     font-size: 1.4vw;
+    padding: 1rem;
   }
 
   .dropdowns {
     grid-column: 2 / 3;
-    grid-row: 1/5;
-    height: 10vh;
+    grid-row: 2/6;
   }
 
   .list-of-dropdowns {
     margin: 0;
   }
-  
-  .dropdown-content {
+
+  .list-of-dropdowns > li:hover .dropdown-content {
+    display: flex;
     flex-direction: row;
+    justify-content: start;
+
   }
+
+  .dropdown-content {
+    display: none;
+  }
+
 
   .dropdown-content > a {
     font-size: 1.3vw;
-    display: flex;
-    flex-direction: column;
+    height: 7.5vw;
+    width: 7.5vw;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    padding: 2%;
   }
 
+  .dropdown-content > a > img {
+    padding: 0;
+    width: 4.5vw;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .dropdown-content > a > span {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    font-weight: 250;
+    color: #253858;
+  }
+
+  /* contact form */
   #contact-form > .wrapper-contact {
     margin-top: 0;
   }
 
   .wrapper-contact > h2 {
   font-size: 3vw;
+  }
+
+  .wrapper-contact > * {
+    border: 1px solid red;
+    font-size: 1rem;
+  }
+
+  form > * > *{
+    font-size: 1rem;
+  }
+
+  form > input[type=text],
+  input[type=email] {
+    font-size: 1rem;
   }
 }
