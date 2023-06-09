@@ -482,12 +482,36 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
+  /* animation and transition */
+  img {
+    transition: rotate 1s;
+  }
+
+  img:hover {
+    rotate: 360deg;
+  }
+
   /* headliner page */
   .toolbar {
     width: 100vw;
     height: 3.4vh;
     position: relative;
     justify-content: space-around;
+    animation: change-color 5s;
+  }
+
+  @keyframes change-color {
+    0% {
+      background-color: #fff;
+    }
+  
+    50% {
+      background-color: #7f8cff69;
+    }
+  
+    100% {
+      background-color: #fff;
+    }
   }
 
   .toolbar-links {
@@ -606,8 +630,11 @@ form {
     padding-right: 0;
   }
 
+  .li-desktop {
+    display: block;
+  }
+
   .image-desktop,
-  .li-desktop,
   .project-desktop,
   .client-name-desktop,
   .name-desktop {
@@ -679,11 +706,16 @@ form {
     grid-row: 1/2;
     margin-top: 13%;
     margin-left: 3%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .greeting:hover,
+  .greeting:focus {
+    text-shadow: 0.5px 0.5px 0.5px red, 0 0 1em blue, 0 0 0.1em blue;
   }
 
   .container > ul > li {
     font-size: 1.2vw;
-    font-weight: 50;
     margin: 0;
   }
 
@@ -695,7 +727,7 @@ form {
     margin: 2%;
     font-size: 0.85vw;
     font-weight: 50;
-    padding: 0.07rem 0.3rem 0.07rem 0.3rem;
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
     border-radius: 0.3rem;
   }
 
