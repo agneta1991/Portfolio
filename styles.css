@@ -676,7 +676,7 @@ form {
 
   .greeting {
     font-size: 3.334vw;
-    grid-row: 2/3;
+    grid-row: 1/2;
     margin-top: 13%;
     margin-left: 3%;
   }
@@ -688,7 +688,7 @@ form {
   }
 
   .second-text {
-    grid-row: 4/6;
+    grid-row: 2/3;
   }
 
   .buttons > ul > li {
@@ -718,24 +718,28 @@ form {
   #headline-two {
     display: grid;
     grid-template-columns: repeat(2, 40% 60%);
-    grid-template-rows: repeat(9, 5vh);
-    height: 55vh;
+    grid-template-rows: repeat(5, auto-fill);
+    height: 45vh;
     padding: 8.2% 8.2% 4.2% 8.2%;
     background-color: #fff;
     border-radius: 0 20% 0 0;
     width: 86vw;
   }
 
+  #headline-two > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .wrapper-contact > div > h2 {
     font-size: 3vw;
   }
 
   #headline-two > h2 {
-    grid-row: 8/9;
+    grid-row: 3/4;
   }
 
   #headline-two > .socials {
-    grid-row: 9/10;
+    grid-row: 4/5;
     align-self: center;
   }
 
@@ -751,9 +755,13 @@ form {
   }
 
   #resume {
-    grid-row: 10/11;
-    width: 13vw;
-    padding: 0;
+    grid-row: 5/6;
+    width: 14.5vw;
+    height: 6vh;
+    padding: 2%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2%;
   }
 
   .dropbtn {
@@ -763,7 +771,7 @@ form {
 
   .dropdowns {
     grid-column: 2 / 3;
-    grid-row: 2/6;
+    grid-row: 1/6;
   }
 
   .list-of-dropdowns {
@@ -804,6 +812,8 @@ form {
     padding: 0;
     background-color: #fff;
     margin-top: 5%;
+    border: 2px solid greenyellow;
+    height: 81vh;
   }
 
   .wrapper-contact {
@@ -811,8 +821,7 @@ form {
     background-size: contain;
     border-radius: 20% 0 0 0;
     padding: 3%;
-    margin: 0;
-    height: 100vh;
+    border: 2px solid peru;
   }
 
   .wrapper-contact > div {
@@ -820,9 +829,9 @@ form {
     flex-direction: column;
     align-items: center;
     width: 55vw;
-    height: 70vh;
     justify-self: flex-start;
     padding-top: 6%;
+    border: 1px solid magenta;
   }
 
   .contact-para {
