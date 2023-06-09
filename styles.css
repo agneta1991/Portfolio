@@ -519,27 +519,30 @@ form {
   .wrapper-1 {
     height: 100vh;
     width: 100vw;
-    background-image: url(images/desktop-pictures/Header\ bg.png);
-    background-color: #fff;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f7f7f9;
   }
 
   .about {
     font-size: 1.3889vw;
+    margin-left: 3%;
   }
 
-  h2 {
+  .headline > h2 {
     font-size: 1.112vw;
+    margin-left: 3%;
   }
 
   .headline {
-    background-image: none;
+    background-image: url(images/desktop-pictures/Header\ bg.png);
+    background-color: #fff;
+    background-position: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
     padding: 15%;
     padding-top: 12%;
     padding-bottom: 0;
     border-radius: 0 0 0 180px;
-    height: 81vh;
+    height: 70vh;
     justify-content: start;
     width: 70vw;
   }
@@ -674,6 +677,8 @@ form {
   .greeting {
     font-size: 3.334vw;
     grid-row: 2/3;
+    margin-top: 13%;
+    margin-left: 3%;
   }
 
   .container > ul > li {
