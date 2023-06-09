@@ -527,7 +527,9 @@ form {
   .toolbar-links > a {
     font-size: 1vw;
     margin: 0;
-    padding: 0;
+    padding: 6%;
+    text-decoration: none;
+    color: #344563;
   }
 
   #work {
