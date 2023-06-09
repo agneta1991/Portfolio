@@ -807,21 +807,24 @@ form {
   /* contact form */
 
   #contact-form {
-    height: 80vh;
     margin: 0;
-    padding: 0;
-    background-color: #fff;
+    padding: 8%;
+    padding-top: 6.5%;
+    background-color: #6070ff;
     margin-top: 5%;
-    border: 2px solid greenyellow;
-    height: 81vh;
+    height: 70vh;
+    padding-left: 2%;
+    border-radius: 20% 0 0 0;
   }
 
   .wrapper-contact {
     background-image: url(images/desktop-pictures/contact\ form\ background\ shapes.png);
     background-size: contain;
-    border-radius: 20% 0 0 0;
-    padding: 3%;
-    border: 2px solid peru;
+    background-color: #6070ff;
+    padding-top: 5%;
+    width: 95vw;
+
+    border-radius: 12% 0 0 0;
   }
 
   .wrapper-contact > div {
@@ -831,11 +834,11 @@ form {
     width: 55vw;
     justify-self: flex-start;
     padding-top: 6%;
-    border: 1px solid magenta;
+    margin-top: -20%;
   }
 
   .contact-para {
-    width: 30vw;
+    width: 40vw;
     font-size: 1.5vw;
     padding: 0;
     padding-bottom: 2%;
@@ -857,35 +860,40 @@ form {
 
   form {
     padding: 0;
-    padding-top: 3%;
     margin: 0;
-    width: 45vw;
+    width: 35vw;
     height: 30vh;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    gap: 8%;
   }
 
   input[type=text],
   input[type=email] {
-    width: 22vw;
-    padding: 6%;
+    width: 27vw;
+    padding: 5%;
     height: 1vh;
     font-size: 1.5vw;
     border-radius: 2px;
+    margin-left: -5%;
   }
 
   input[type=submit] {
     font-size: 1.3vw;
     border-radius: 8%;
-    margin-left: 0.5%;
+    margin-left: 27%;
     width: 12vw;
     padding: 2%;
   }
 
   textarea {
-    width: 22vw;
+    width: 27vw;
     height: 10vh;
     font-size: 1.5vw;
     border-radius: 2px;
     padding: 6%;
+    margin-left: -6%;
   }
 
   .message-label {
