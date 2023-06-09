@@ -758,10 +758,18 @@ form {
     width: 86vw;
   }
 
+  .wrapper-contact > * {
+    font-size: 1rem;
+    width: 75vw;
+    padding: 0;
+    justify-self: start;
+  }
+
   #headline-two > * {
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .wrapper-contact > div > h2 {
     font-size: 3vw;
   }
@@ -855,7 +863,6 @@ form {
     background-color: #6070ff;
     padding-top: 5%;
     width: 95vw;
-
     border-radius: 12% 0 0 0;
   }
 
@@ -881,13 +888,6 @@ form {
     height: 70vh;
     margin-top: 0;
     align-items: center;
-  }
-
-  .wrapper-contact > * {
-    font-size: 1rem;
-    width: 75vw;
-    padding: 0;
-    justify-self: start;
   }
 
   form {
