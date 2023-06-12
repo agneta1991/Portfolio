@@ -40,7 +40,7 @@ Portfolio is a project made out of smaller projects. Specifically in this projec
 
 
 - **Project has a set up of mobile first**
-**Project is set up for various desktope screen sizes**
+-**Project has verious desktop screen size set up**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
