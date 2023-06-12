@@ -40,6 +40,7 @@ Portfolio is a project made out of smaller projects. Specifically in this projec
 
 
 - **Project has a set up of mobile first**
+**Project is set up for various desktope screen sizes**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -49,7 +50,7 @@ Portfolio is a project made out of smaller projects. Specifically in this projec
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Project is not deployed yet.]()
+- [Click me to view deployed project!](https://agneta1991.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
