@@ -5,14 +5,11 @@ html {
 body {
   width: 100%;
   margin: 0;
-  background-color: #fff;
+  background-color: #f7f7f9;
 }
 
-.menu-logo div {
-  width: 1vw;
-  height: 3px;
-  background-color: #6070ff;
-  margin: 4px 0;
+.menu-logo {
+  color: #6070ff;
 }
 
 .logo {
@@ -248,11 +245,11 @@ h2 {
 }
 
 .second-part {
-  background-image: url(images/Base\ about\ my\ self.png);
-  background-size: cover;
-  background-repeat: repeat-y;
+  border-radius: 0 12% 0 0;
   padding-top: 30%;
   padding-bottom: 70%;
+  background-color: #fff;
+  height: 110vh;
 }
 
 .second-part > .headline > * {
@@ -275,9 +272,8 @@ h2 {
 }
 
 #resume {
-  margin: 0;
-  margin-left: 4%;
-  width: 44vw;
+  text-align: center;
+  width: 45vw;
   padding: 3%;
   grid-row: 9/10;
 }
@@ -377,7 +373,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   padding-top: 65px;
-  margin-top: 40%;
 }
 
 .wrapper-contact > div > h2 {
@@ -422,7 +417,6 @@ textarea {
   font-size: 4.5vw;
   font-weight: 400;
   line-height: 20px;
-  height: 262%;
   background: #fff;
   border: 1px solid #cfd8dc;
   padding: 8px;
@@ -430,6 +424,7 @@ textarea {
   word-wrap: break-word;
   word-break: break-all;
   width: 80vw;
+  height: 20vh;
 }
 
 input[type=submit] {
@@ -457,8 +452,6 @@ form {
   gap: 20px;
   display: flex;
   flex-direction: column;
-  height: 316px;
-  width: 327px;
   align-items: center;
   justify-content: center;
   padding: 3%;
@@ -467,7 +460,7 @@ form {
 }
 
 .message-label {
-  padding-bottom: 40%;
+  padding-bottom: 3%;
 }
 
 .toolbar-links,
@@ -476,8 +469,7 @@ form {
 .client-name-desktop,
 .name-desktop,
 .li-desktop,
-.project-desktop,
-.menu-logo {
+.project-desktop {
   display: none;
 }
 
@@ -489,6 +481,10 @@ form {
 
   img:hover {
     rotate: 360deg;
+  }
+
+  .menu-logo {
+    display: none;
   }
 
   /* headliner page */
@@ -533,7 +529,7 @@ form {
   }
 
   #work {
-    height: 320vh;
+    height: 305vh;
     margin: 0;
     padding: 0;
     display: flex;
@@ -753,11 +749,11 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 40% 60%);
     grid-template-rows: repeat(5, auto-fill);
-    height: 45vh;
     padding: 8.2% 8.2% 4.2% 8.2%;
     background-color: #fff;
     border-radius: 0 20% 0 0;
     width: 86vw;
+    height: 57vh;
   }
 
   .wrapper-contact > * {
