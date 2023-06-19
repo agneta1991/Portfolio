@@ -1,34 +1,27 @@
-let menuIcon = document.getElementById('fa-bars');
-let menuExit = document.getElementById('fa-xmark');
-let menuContent = document.querySelectorAll('.menu-content > a');
-
-menuIcon.addEventListener('touchstart', menuIconFunction);
+const menuIcon = document.getElementById('fa-bars');
+const menuExit = document.getElementById('fa-xmark');
+const menuContent = document.querySelectorAll('.menu-content > a');
+const menuPage = document.getElementById('menu-page');
 
 function menuIconFunction() {
-  document.getElementById('menu-page').style.display = 'flex';
+  menuPage.style.display = 'flex';
 }
-
-menuExit.addEventListener('touchstart', exitFunction);
 
 function exitFunction() {
-  document.getElementById('menu-page').style.display = 'none';
+  menuPage.style.display = 'none';
 }
 
-menuContent.forEach(individualSection => {
-  individualSection.addEventListener('touchstart', menuScroll);
-
-  function menuScroll() {
-    if (individualSection.className === 'menu-portfolio') {
-      window.scrollTo(0, 400);
-    }
-    else if (individualSection.className === 'menu-about-myself') {
-      window.scrollTo(0, 800);
-    }
-    else if (individualSection.className === 'menu-contact-form') {
-      window.scrollTo(0, 600);
-    }
-  }
+function scrollSection(event) {
+  event.preventDefault();
+  const sectionId = this.getAttribute('href');
+  const targetedSection = document.querySelector(sectionId);
+  targetedSection.scrollIntoView({ behavior: 'smooth' });
 }
-)
 
+menuIcon.addEventListener('touchstart', menuIconFunction);
+menuExit.addEventListener('touchstart', exitFunction);
+menuPage.addEventListener('touchstart', exitFunction);
 
+menuContent.forEach((individualSection) => {
+  individualSection.addEventListener('touchstart', scrollSection);
+});
