@@ -49,6 +49,51 @@ p {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
+  border-radius: 0 0 0 15%;
+}
+
+.mobile-menu-page {
+  position: fixed;
+  background-color: #2032f4a8;
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  z-index: 9999;
+  padding-top: 50%;
+  padding-right: 0;
+}
+
+.mobile-menu-page > ul {
+  padding: 0 28px 0 28px;
+}
+
+.mobile-menu-page > ul > li {
+  list-style: none;
+  padding-top: 5%;
+}
+
+.mobile-menu-page > ul > li  > a {
+  font-size: 10vw;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  color: #fff;
+  backdrop-filter: none;
+  text-decoration: none;
+  mix-blend-mode: normal;
+  line-height: 44px;
+}
+
+.fa-xmark {
+  color: #fff;
+  font-size: 6vw;
+  text-align: end;
+  padding-right: 10%;
+  padding-top: 10%;
+  font-style: normal;
 }
 
 .headline > * {
