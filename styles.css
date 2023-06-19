@@ -42,7 +42,7 @@ p {
 .headline {
   height: calc(100vh - 65px);
   background-image: url(images/header-shapes\ mobile.png), url(images/header-background-mobile.png);
-  background-size: calc(cover - 10%);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -117,7 +117,7 @@ p {
 .greeting {
   font-size: 10.7vw;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 100%;
   text-align: left;
   color: #172b4d;
 }
@@ -125,7 +125,7 @@ p {
 .about {
   font-size: 4.4vw;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.6rem;
   text-align: left;
   color: #344563;
 }
@@ -522,6 +522,10 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+    max-height: 916px;
+  }
   /* animation and transition */
   img {
     transition: rotate 1s;
@@ -609,7 +613,7 @@ form {
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 15%;
-    padding-top: 12%;
+    padding-top: 20%;
     padding-bottom: 0;
     border-radius: 0 0 0 180px;
     height: 70vh;
@@ -750,7 +754,6 @@ form {
   .greeting {
     font-size: 3.334vw;
     grid-row: 1/2;
-    margin-top: 13%;
     margin-left: 3%;
     transition: all 0.5s ease-in-out;
   }
