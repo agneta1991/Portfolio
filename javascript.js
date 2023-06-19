@@ -3,11 +3,13 @@ const menuExit = document.getElementById('fa-close');
 const menuContent = document.querySelectorAll('.menu-content > a');
 const menuPage = document.getElementById('menu-page');
 
-function menuIconFunction() {
+function menuIconFunction(event) {
+  event.preventDefault();
   menuPage.style.display = 'flex';
 }
 
-function exitFunction() {
+function exitFunction(event) {
+  event.preventDefault();
   menuPage.style.display = 'none';
 }
 
