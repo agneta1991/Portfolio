@@ -18,12 +18,20 @@
         <header class="toolbar">
             <a href="/" class="logo">My Logo</a>
             <a class="menu-logo">
-                <i class="fa-solid fa-bars"></i>
+                <i id="fa-bars" class="fa-solid fa-bars"></i>
             </a>
             <div class="toolbar-links">
                 <a href="#work">Portfolio</a>
                 <a href="#about-myself">About</a>
                 <a href="#contact-form">Contact</a>
+            </div>
+            <div id="menu-page"  class="mobile-menu-page">
+                <i id='fa-close' class="fa fa-close"></i>
+                <ul>
+                    <li class="menu-content"><a class="menu-portfolio" href="#work">Portfolio</a></li>
+                    <li class="menu-content"><a class="menu-about-myself" href="#about-myself">About</a></li>
+                    <li class="menu-content"><a class="menu-contact-form" href="#contact-form">Contact</a></li>
+                </ul>
             </div>
         </header>
         <section class="headline">
@@ -277,6 +285,7 @@
             </div>
         </div>
     </section>
+    <script src="javascript.js"></script>
 </body>
 
 </html>

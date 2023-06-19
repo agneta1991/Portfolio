@@ -1,5 +1,6 @@
 html {
   font-family: "Poppins", serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,6 +50,62 @@ p {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
+  border-radius: 0 0 0 15%;
+}
+
+.dropdown-content > a {
+  background-color: #f7f7f9;
+  font-size: 4.4vw;
+  text-decoration: none;
+  display: none;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.mobile-menu-page {
+  position: fixed;
+  background-color: #2032f4a8;
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  z-index: 9999;
+  padding-top: 50%;
+  padding-right: 0;
+}
+
+.mobile-menu-page > ul {
+  padding: 0 28px 0 28px;
+}
+
+.mobile-menu-page > ul > li {
+  list-style: none;
+  padding-top: 5%;
+}
+
+.mobile-menu-page > ul > li > a {
+  font-size: 10vw;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  color: #fff;
+  backdrop-filter: none;
+  text-decoration: none;
+  mix-blend-mode: normal;
+  line-height: 44px;
+}
+
+.fa-close {
+  color: #fff;
+  text-align: end;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+#menu-page {
+  display: none;
 }
 
 .headline > * {
@@ -306,15 +363,6 @@ h2 {
   flex-direction: column;
   gap: 12px;
   justify-content: center;
-  border-radius: 8px;
-}
-
-.dropdown-content > a {
-  background-color: #f7f7f9;
-  font-size: 4.4vw;
-  text-decoration: none;
-  display: none;
-  align-items: center;
   border-radius: 8px;
 }
 
