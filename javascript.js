@@ -1,5 +1,5 @@
 const menuIcon = document.getElementById('fa-bars');
-const menuExit = document.getElementById('fa-xmark');
+const menuExit = document.getElementById('fa-close');
 const menuContent = document.querySelectorAll('.menu-content > a');
 const menuPage = document.getElementById('menu-page');
 
