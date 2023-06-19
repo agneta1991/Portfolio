@@ -23,7 +23,6 @@ function scrollSection(event) {
 
 menuIcon.addEventListener('touchstart', menuIconFunction);
 menuExit.addEventListener('touchstart', exitFunction);
-// menuPage.addEventListener("touchstart", exitFunction);
 
 menuContent.forEach((individualSection) => {
   individualSection.addEventListener('touchstart', scrollSection);
@@ -31,7 +30,6 @@ menuContent.forEach((individualSection) => {
 
 menuIcon.addEventListener('click', menuIconFunction);
 menuExit.addEventListener('click', exitFunction);
-// menuPage.addEventListener('click', exitFunction);
 
 menuContent.forEach((individualSection) => {
   individualSection.addEventListener('click', scrollSection);
