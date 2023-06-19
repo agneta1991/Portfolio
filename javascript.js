@@ -25,3 +25,11 @@ menuPage.addEventListener('touchstart', exitFunction);
 menuContent.forEach((individualSection) => {
   individualSection.addEventListener('touchstart', scrollSection);
 });
+
+menuIcon.addEventListener('click', menuIconFunction);
+menuExit.addEventListener('click', exitFunction);
+menuPage.addEventListener('click', exitFunction);
+
+menuContent.forEach((individualSection) => {
+  individualSection.addEventListener('click', scrollSection);
+});
