@@ -89,11 +89,13 @@ p {
 
 .fa-xmark {
   color: #fff;
-  font-size: 6vw;
   text-align: end;
   padding-right: 10%;
   padding-top: 10%;
-  font-style: normal;
+}
+
+#menu-page {
+  display: none;
 }
 
 .headline > * {
