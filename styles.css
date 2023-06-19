@@ -52,6 +52,15 @@ p {
   border-radius: 0 0 0 15%;
 }
 
+.dropdown-content > a {
+  background-color: #f7f7f9;
+  font-size: 4.4vw;
+  text-decoration: none;
+  display: none;
+  align-items: center;
+  border-radius: 8px;
+}
+
 .mobile-menu-page {
   position: fixed;
   background-color: #2032f4a8;
@@ -76,7 +85,7 @@ p {
   padding-top: 5%;
 }
 
-.mobile-menu-page > ul > li  > a {
+.mobile-menu-page > ul > li > a {
   font-size: 10vw;
   font-family: "Poppins", serif;
   font-weight: 600;
@@ -353,15 +362,6 @@ h2 {
   flex-direction: column;
   gap: 12px;
   justify-content: center;
-  border-radius: 8px;
-}
-
-.dropdown-content > a {
-  background-color: #f7f7f9;
-  font-size: 4.4vw;
-  text-decoration: none;
-  display: none;
-  align-items: center;
   border-radius: 8px;
 }
 
