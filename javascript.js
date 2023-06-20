@@ -110,6 +110,8 @@ menuContent.forEach((individualSection) => {
   individualSection.addEventListener('click', scrollSection);
 });
 
+/*everything below is creting elements and adding content from array*/
+
 for (let i = 0; i <= projects.length - 1; i++) {
   const div = document.createElement('div');
   div.id = `dynamic-project`+ i;
@@ -207,7 +209,23 @@ for (let i = 0; i <= projects.length - 1; i++) {
   mobileClientName.classList.add('name');
 }
 
-/*const seeProjects = document.querySelectorAll('[id^="see-project"]');
+/*everything below is creating pop up see project*/
+
+const seeProjects = document.querySelectorAll('[id^="see-project"]');
 seeProjects.forEach((individualProject) => {
   individualProject.addEventListener('touchstart', popupFunction);
-});*/
+});
+
+/* god knows whats happening here 
+
+function popupFunction (){
+  let popup = document.querySelectorAll('project');
+  popup.forEach(individualProject => {
+    individualProject.classList.add('popup');
+    individualProject.innerHTML = '<h3>' + projects[i] +
+    '<ul>' + '<li class= \'li-mobile\'>' + '<img class=\'image-mobile\>' + 
+    projects[i].image_mobile + projects.description_popup + 
+    '<ul>' + '<li class= \'buttons\'>' + projects[i].technologies_mobile + 
+    '<div class= \'twoButtons\'>' + '</div>'
+  });
+} */
