@@ -2,6 +2,7 @@ const menuIcon = document.getElementById('fa-bars');
 const menuExit = document.getElementById('fa-close');
 const menuContent = document.querySelectorAll('.menu-content > a');
 const menuPage = document.getElementById('menu-page');
+const workSection = document.getElementById('work');
 
 function menuIconFunction(event) {
   event.preventDefault();
@@ -76,3 +77,21 @@ const projects = {
     source: 'https://github.com/username/project-repository',
   },
 };
+
+const seeProject1 = document.getElementById('see-project1');
+const seeProject2 = document.getElementById('see-project2');
+const seeProject3 = document.getElementById('see-project3');
+const seeProject4 = document.getElementById('see-project4');
+
+seeProject1.addEventListener('touchstart', popupFunction);
+seeProject2.addEventListener('touchstart', popupFunction);
+seeProject3.addEventListener('touchstart', popupFunction);
+seeProject4.addEventListener('touchstart', popupFunction);
+
+function popupFunction(){
+  let div = document.createElement('div');
+  div.id = 'dynamic-project';
+  div.className = 'project';
+  div.innerHTML='im here';
+  workSection.appendChild(div);
+}
