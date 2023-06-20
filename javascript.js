@@ -55,7 +55,13 @@ for (let i = 0; i < projects.length; i++) {
   image.id ='image'+ i;
   image.alt = 'Project picture';
   image.src = projects[i].image_mobile;
-  document.getElementById('container'+ i).appendChild(image);
+  document.getElementById('container' + i).appendChild(image);
+
+  // let DesktopImage = document.createElement('img');
+  // DesktopImage.className = 'flip-img';
+  // DesktopImage.alt = 'Project picture';
+  // DesktopImage.src = projects[i].image_desktop;
+  // document.getElementById('container'+ i).appendChild(DesktopImage);
 
   let h3 = document.createElement('h3');
   h3.id= 'client-name'+ i;
@@ -72,9 +78,14 @@ for (let i = 0; i < projects.length; i++) {
   let ul = document.createElement('ul');
   const info = projects[i].project_info_mobile;
   info.forEach(individualInfoitem => {
-    let li = document.createElement ('li');
+    let li = document.createElement('li');
+    li.className = 'li-mobile';
     li.innerHTML = individualInfoitem;
     ul.appendChild(li);
+    let desktopli = document.createElement('li');
+    desktopli.className = 'li-desktop';
+    ul.appendChild(desktopli);
+
   });
   document.getElementById('container'+i).appendChild(ul);
 
@@ -82,6 +93,11 @@ for (let i = 0; i < projects.length; i++) {
   p.className = 'about-project project-mobile';
   p.innerHTML = projects[i].description_mobile;
   document.getElementById('container'+ i).appendChild(p);
+
+  let desktopp = document.createElement('p');
+  desktopp.className = 'about-project project-desktop';
+  desktopp.innerHTML = projects[i].description_desktop;
+  document.getElementById('container'+ i).appendChild(desktopp);
 
   let technologyDiv = document.createElement('div');
   technologyDiv.id = 'technologyDiv' + i;
