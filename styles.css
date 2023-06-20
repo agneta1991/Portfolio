@@ -195,6 +195,7 @@ h2 {
   background-color: #f7f7f9;
   display: flex;
   justify-content: center;
+  border: 2px solid magenta;
 }
 
 .client-name {
