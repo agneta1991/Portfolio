@@ -195,7 +195,6 @@ h2 {
   background-color: #f7f7f9;
   display: flex;
   justify-content: center;
-  border: 2px solid magenta;
 }
 
 .client-name {
@@ -516,7 +515,7 @@ form {
 .image-desktop,
 .about-project-desktop,
 .client-name-desktop,
-.name-desktop,
+.li-desktop,
 .li-desktop,
 .project-desktop {
   display: none;
@@ -684,7 +683,7 @@ form {
   .image-desktop,
   .project-desktop,
   .client-name-desktop,
-  .name-desktop {
+  .li-desktop {
     display: block;
   }
 
@@ -704,6 +703,7 @@ form {
     align-self: end;
     margin: 2%;
     font-size: 2.78vw;
+    grid-row: 2/3;
   }
 
   .container > ul {

@@ -43,7 +43,7 @@ import { projects } from "./object-data-javascript.js";
 for (let i = 0; i < projects.length; i++) {
   let div = document.createElement('div');
   div.id = 'dynamic-project' + [i];
-  div.class = 'project'
+  div.className = 'project project-'+(i+1);
   workSection.appendChild(div);
 
   let secondDiv = document.createElement('div');
@@ -53,15 +53,17 @@ for (let i = 0; i < projects.length; i++) {
 
   let image = document.createElement('img');
   image.id ='image'+ i;
+  image.className = 'image-mobile';
   image.alt = 'Project picture';
   image.src = projects[i].image_mobile;
   document.getElementById('container' + i).appendChild(image);
 
-  // let DesktopImage = document.createElement('img');
-  // DesktopImage.className = 'flip-img';
-  // DesktopImage.alt = 'Project picture';
-  // DesktopImage.src = projects[i].image_desktop;
-  // document.getElementById('container'+ i).appendChild(DesktopImage);
+  let dimage = document.createElement('img');
+  dimage.id ='image'+ i;
+  dimage.className = 'image-desktop'
+  dimage.alt = 'Project picture';
+  dimage.src = projects[i].image_desktop;
+  document.getElementById('container' + i).appendChild(dimage);
 
   let h3 = document.createElement('h3');
   h3.id= 'client-name'+ i;
@@ -73,21 +75,29 @@ for (let i = 0; i < projects.length; i++) {
   h3desktop.id = 'client-name-desktop' + i;
   h3desktop.className = 'client-name client-name-desktop';
   h3desktop.innerHTML = projects[i].project_name_desktop;
-  document.getElementById('container'+ i).appendChild(h3);
+  document.getElementById('container'+ i).appendChild(h3desktop);
 
   let ul = document.createElement('ul');
   const info = projects[i].project_info_mobile;
   info.forEach(individualInfoitem => {
     let li = document.createElement('li');
+    li.id = 'li'+i;
     li.className = 'li-mobile';
     li.innerHTML = individualInfoitem;
     ul.appendChild(li);
-    let desktopli = document.createElement('li');
-    desktopli.className = 'li-desktop';
-    ul.appendChild(desktopli);
-
   });
   document.getElementById('container'+i).appendChild(ul);
+
+  let desktopUl = document.createElement('ul');
+  const desktopinfo = projects[i].project_info_desktop;
+  desktopinfo.forEach(individualdesktop => {
+    let desktopli = document.createElement('li');
+    desktopli.id = 'desktopli'+i;
+    desktopli.className = 'li-desktop';
+    desktopli.innerHTML = individualdesktop;
+    desktopUl.appendChild(desktopli);
+  });
+  document.getElementById('container'+i).appendChild(desktopUl);
 
   let p = document.createElement('p');
   p.className = 'about-project project-mobile';
@@ -120,6 +130,11 @@ for (let i = 0; i < projects.length; i++) {
   btn.type = 'submit';
   btn.innerHTML = 'See project';
   document.getElementById('container'+ i).appendChild(btn);
+
+  let clientName = document.getElementById('desktopli'+i);
+  clientName.classList.add('name');
+  let mobileClientName = document.getElementById('li'+i);
+  mobileClientName.classList.add('name');
 }
 
 let seeProjects = document.querySelectorAll('[id^="see-project"]');
