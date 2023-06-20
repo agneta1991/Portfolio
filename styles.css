@@ -526,6 +526,7 @@ form {
     max-width: 1440px;
     max-height: 916px;
   }
+
   /* animation and transition */
   img {
     transition: rotate 1s;
