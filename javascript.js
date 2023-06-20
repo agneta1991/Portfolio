@@ -47,17 +47,64 @@ for (let i = 0; i < projects.length; i++) {
   workSection.appendChild(div);
 
   let secondDiv = document.createElement('div');
+  secondDiv.id = 'container'+ i;
   secondDiv.className = 'container';
-  secondDiv.innerHTML =
-  '<img src="' + projects[i].image[0] + '" alt="Project Image">' +
-  '<h3 class="client-name li-mobile"' + projects[i].project_name + '</h3>' +
-  '<h3 class="client-name client-name-desktop">' + projects[i].project_name[1] + '</h3>' +
-  '<ul>' + '<li class="name li-mobile">' + projects[i].project_info[0] + 
-    '<h2>' + projects[i].project_name + '</h2>' +
-    '<p>' + projects[i].description_mobile + '</p>' +
-    '<a href="' + projects[i].link + '">Visit Project</a>';
+  document.getElementById('dynamic-project'+ i).appendChild(secondDiv);
 
-  document.getElementById('dynamic-project' + [i]).appendChild(secondDiv);
+  let image = document.createElement('img');
+  image.id ='image'+ i;
+  image.alt = 'Project picture';
+  image.src = projects[i].image[0];
+  document.getElementById('container'+ i).appendChild(image);
+
+  let h3 = document.createElement('h3');
+  h3.id= 'client-name'+ i;
+  h3.className = 'client-name li-mobile';
+  h3.innerHTML = projects[i].project_name[0];
+  document.getElementById('container'+ i).appendChild(h3);
+
+  let h3desktop = document.createElement('h3');
+  h3desktop.id = 'client-name-desktop' + i;
+  h3desktop.className = 'client-name client-name-desktop';
+  h3desktop.innerHTML = projects[i].project_name[1];
+  document.getElementById('container'+ i).appendChild(h3);
+
+  let ul = document.createElement('ul');
+  const info = projects[i].project_info;
+  info.forEach(individualInfoitem => {
+    let li = document.createElement ('li');
+    li.innerHTML = individualInfoitem;
+    ul.appendChild(li);
+  });
+  document.getElementById('container'+i).appendChild(ul);
+
+  let p = document.createElement('p');
+  p.className = 'about-project project-mobile';
+  p.innerHTML = projects[i].description_mobile;
+  document.getElementById('container'+ i).appendChild(p);
+
+  let technologyDiv = document.createElement('div');
+  technologyDiv.id = 'technologyDiv' + i;
+  technologyDiv.className = 'buttons';
+  document.getElementById('container'+ i).appendChild(technologyDiv);
+
+  let technologyUl = document.createElement('ul');
+  let technoLi = projects[i].technologies;
+
+  technoLi.forEach(individualTechLiItem => {
+    let secondLi = document.createElement ('li');
+    secondLi.innerHTML = individualTechLiItem;
+    technologyUl.appendChild(secondLi);
+  })
+  document.getElementById('technologyDiv' + i).appendChild(technologyUl);
+
+  let btn = document.createElement('button');
+  btn.id = 'see-project'+(i+1);
+  btn.className = 'see-project';
+  btn.type = 'submit';
+  btn.innerHTML = 'See project';
+  document.getElementById('container'+ i).appendChild(btn);
+
 
 }
 
