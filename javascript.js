@@ -54,23 +54,23 @@ for (let i = 0; i < projects.length; i++) {
   let image = document.createElement('img');
   image.id ='image'+ i;
   image.alt = 'Project picture';
-  image.src = projects[i].image[0];
+  image.src = projects[i].image_mobile;
   document.getElementById('container'+ i).appendChild(image);
 
   let h3 = document.createElement('h3');
   h3.id= 'client-name'+ i;
   h3.className = 'client-name li-mobile';
-  h3.innerHTML = projects[i].project_name[0];
+  h3.innerHTML = projects[i].project_name_mobile;
   document.getElementById('container'+ i).appendChild(h3);
 
   let h3desktop = document.createElement('h3');
   h3desktop.id = 'client-name-desktop' + i;
   h3desktop.className = 'client-name client-name-desktop';
-  h3desktop.innerHTML = projects[i].project_name[1];
+  h3desktop.innerHTML = projects[i].project_name_desktop;
   document.getElementById('container'+ i).appendChild(h3);
 
   let ul = document.createElement('ul');
-  const info = projects[i].project_info;
+  const info = projects[i].project_info_mobile;
   info.forEach(individualInfoitem => {
     let li = document.createElement ('li');
     li.innerHTML = individualInfoitem;
@@ -89,7 +89,7 @@ for (let i = 0; i < projects.length; i++) {
   document.getElementById('container'+ i).appendChild(technologyDiv);
 
   let technologyUl = document.createElement('ul');
-  let technoLi = projects[i].technologies;
+  let technoLi = projects[i].technologies_mobile;
 
   technoLi.forEach(individualTechLiItem => {
     let secondLi = document.createElement ('li');
