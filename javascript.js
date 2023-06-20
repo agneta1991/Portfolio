@@ -104,11 +104,12 @@ for (let i = 0; i < projects.length; i++) {
   btn.type = 'submit';
   btn.innerHTML = 'See project';
   document.getElementById('container'+ i).appendChild(btn);
-
-
 }
 
-console.log(projects.length);
+let seeProjects = document.querySelectorAll('[id^="see-project"]');
+seeProjects.forEach(individualProject=>{
+  console.log(individualProject.id);
+})
 
 const seeProject1 = document.getElementById('see-project1');
 const seeProject2 = document.getElementById('see-project2');
