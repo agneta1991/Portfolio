@@ -266,7 +266,6 @@ function popupFunction (event){
     if (popPage) {
       popPage.style.display = 'none';
     }
-
   });
   nameDiv.appendChild(iconPopup);
 
@@ -350,3 +349,11 @@ function popupFunction (event){
 
 };
 
+const closeIcons = document.querySelectorAll('[id^="fa-close"]');
+closeIcons.forEach((icon) => {
+  icon.addEventListener('click', closePopup);
+});
+
+function closePopup(event) {
+  location.reload;
+}
