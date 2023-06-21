@@ -516,7 +516,8 @@ form {
 .about-project-desktop,
 .client-name-desktop,
 .li-desktop,
-.project-desktop {
+.project-desktop
+.desktop-div {
   display: none;
 }
 
@@ -644,7 +645,7 @@ form {
     background-color: #c1c7d0c6;
     backdrop-filter: blur(5px);
     position: absolute;
-    height: 100vh;
+    height: 110vh;
     margin-top: -7%;
   }
   
@@ -653,8 +654,10 @@ form {
     flex-direction: column;
     align-items: start;
     background-color: #fff;
-    height: 85vh;
-    width: 75vw;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
   }
   
   .buttonsContainer {
@@ -665,13 +668,17 @@ form {
     margin: 0;
   }
   
+  .desktop-div {
+    float: left;
+    width: 60%;
+  }
+
   .popup > .container > p {
-    font-size: 80%;
+    font-size: 100%;
   }
   
   .popup > .container > img {
-    height: 300%;
-    width: auto;
+    width: 95%;
   }
   
   .popup > .container > ul > li {
@@ -680,7 +687,7 @@ form {
 
   .popup > .container > ul {
     align-self: flex-start;
-    margin-top: 0;
+    margin-top: 2%;
     margin-bottom: 0;
     margin-right: 0%;
     margin-left: 3%;

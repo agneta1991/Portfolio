@@ -299,10 +299,14 @@ function popupFunction (event){
   popupP.innerHTML = projects[i].description_popup;
   popupContainer.appendChild(popupP);
 
+  let wrapperDiv = document.createElement('div');
+  wrapperDiv.className = 'desktop-div';
+  popupContainer.appendChild(wrapperDiv);
+
   let popupPD = document.createElement('p');
   popupPD.className = 'about-project project-desktop';
   popupPD.innerHTML = projects[i].description_popup;
-  popupContainer.appendChild(popupPD);
+  wrapperDiv.appendChild(popupPD);
 
   const technDiv = document.createElement('div');
   technDiv.className = 'buttons';
