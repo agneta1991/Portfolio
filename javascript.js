@@ -260,6 +260,14 @@ function popupFunction (event){
   iconPopup.className='fa fa-close';
   iconPopup.value = i;
   iconPopup.style="color: #67798e;";
+
+  iconPopup.addEventListener('click', function() {
+    const popPage = document.getElementById('popPageId' + i);
+    if (popPage) {
+      popPage.style.display = 'none';
+    }
+
+  });
   nameDiv.appendChild(iconPopup);
 
   let popupUl = document.createElement('ul');
@@ -341,18 +349,4 @@ function popupFunction (event){
   popupSecondDiv.appendChild(popupSecondBtn);
 
 };
-
-let closePopup = document.querySelectorAll('[id^="fa-close"]');
-closePopup.forEach((individualClose) => {
-  individualClose.addEventListener('touchstart', closePopUp);
-});
-
-function closePopUp(event) {
-  const closeIcon = event.target;
-  const popUp = closeIcon.closest('.popUpWindow');
-  if (popUp) {
-    popUp.style.display = 'none';
-  }
-}
-
 
