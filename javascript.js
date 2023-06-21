@@ -28,7 +28,7 @@ const projects = [
     project_info_desktop: ['Uber', 'Lead Developer', 2015],
     description_mobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description_desktop: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    description_popup: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description_popup: 'Lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only electronic typesetting, remaining essent',
     image_mobile: 'images/Snapshoot_Portfolio_(1).png',
     image_desktop: 'images/Snapshoot_Portfolio_(1).png',
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
@@ -68,7 +68,7 @@ const projects = [
     project_info_desktop: ['Facebook', 'Full Stack Dev', 2015],
     description_mobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description_desktop: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    description_popup: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description_popup: 'Lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only electronic typesetting, remaining essent',
     image_mobile: 'images/Snapshoot_Portfolio_(3).png',
     image_desktop: 'images/Snapshoot_Portfolio_(3).png',
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
@@ -207,6 +207,7 @@ for (let i = 0; i <= projects.length - 1; i++) {
   const btn = document.createElement('button');
   btn.id = `see-project` + (i + 1);
   btn.className = 'see-project';
+  btn.value = i;
   btn.type = 'submit';
   btn.innerHTML = 'See project';
   document.getElementById(`container` + i).appendChild(btn);
@@ -225,16 +226,14 @@ seeProjects.forEach((individualProject) => {
 });
 
 
-function popupFunction (){
+function popupFunction (event){
+  const whichbtn = event.target.value;
+
   let locationPopup = document.getElementById('wrapperId');
   locationPopup.scrollIntoView({ behavior: 'smooth' });
-  let i=0;
-for (let index=0; index>= projects.length-1; index+1){
-  i=+1;
-}
-
-
+  let i= whichbtn;
   let popupPage = document.createElement('div');
+  popupPage.id = 'popPageId' + i;
   popupPage.className = 'project popup';
   locationPopup.appendChild(popupPage);
 
@@ -251,8 +250,15 @@ for (let index=0; index>= projects.length-1; index+1){
   popuph3.innerHTML = projects[i].project_name_mobile;
   nameDiv.appendChild(popuph3);
 
+  let popuph3D = document.createElement('h3');
+  popuph3D.className= 'client-name client-name-dektop';
+  popuph3D.innerHTML = projects[i].project_name_desktop;
+  nameDiv.appendChild(popuph3D);
+
   let iconPopup = document.createElement('i');
+  iconPopup.id = 'fa-close' + i;
   iconPopup.className='fa fa-close';
+  iconPopup.value = i;
   iconPopup.style="color: #67798e;";
   nameDiv.appendChild(iconPopup);
 
@@ -266,16 +272,37 @@ for (let index=0; index>= projects.length-1; index+1){
   });
   popupContainer.appendChild(popupUl);
 
+  let popupUlD = document.createElement('ul');
+  const popupInfoD = projects[i].project_info_desktop;
+  popupInfoD.forEach((individualInfoitemD) => {
+    const popupliD = document.createElement('li');
+    popupliD.className = 'li-desktop';
+    popupliD.innerHTML = individualInfoitemD;
+    popupUlD.appendChild(popupliD);
+  });
+  popupContainer.appendChild(popupUlD);
+
   let popupimg = document.createElement('img');
   popupimg.className = 'image-mobile';
   popupimg.alt = 'Project picture';
   popupimg.src = projects[i].image_mobile;
   popupContainer.appendChild(popupimg);
 
+  let popupimgD = document.createElement('img');
+  popupimgD.className = 'image-desktop';
+  popupimgD.alt = 'Project picture';
+  popupimgD.src = projects[i].image_desktop;
+  popupContainer.appendChild(popupimgD);
+
   let popupP = document.createElement('p');
   popupP.className = 'about-project project-mobile';
   popupP.innerHTML = projects[i].description_popup;
   popupContainer.appendChild(popupP);
+
+  let popupPD = document.createElement('p');
+  popupPD.className = 'about-project project-desktop';
+  popupPD.innerHTML = projects[i].description_popup;
+  popupContainer.appendChild(popupPD);
 
   const technDiv = document.createElement('div');
   technDiv.className = 'buttons';
@@ -308,3 +335,18 @@ for (let index=0; index>= projects.length-1; index+1){
   popupSecondDiv.appendChild(popupSecondBtn);
 
 };
+
+let closePopup = document.querySelectorAll('[id^="fa-close"]');
+closePopup.forEach((individualClose) => {
+  individualClose.addEventListener('touchstart', closePopUp);
+});
+
+function closePopUp(event) {
+  const closeIcon = event.target;
+  const popUp = closeIcon.closest('.popUpWindow');
+  if (popUp) {
+    popUp.style.display = 'none';
+  }
+}
+
+

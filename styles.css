@@ -541,16 +541,16 @@ form {
 }
 
 .popup > .container > p {
-  font-size: 88%;
+  font-size: 80%;
 }
 
 .popup > .container > img {
-  height: 87%;
+  height: 86%;
   width: auto;
 }
 
 .popup > .container > ul > li {
-font-size: 75%;
+  font-size: 74%;
 }
 
 .popup > .container > .nameDiv {
@@ -559,22 +559,26 @@ font-size: 75%;
   margin: 0;
 }
 
-.popup > .container > .nameDiv > .fa-close{
-  margin-top: 0;
-  font-size: 120%;
-  padding-right: 5%;
-  padding-top: 8%;
+.popup > .container > .nameDiv > h3 {
+  margin: 0;
 }
+
+.popup > .container > .nameDiv > .fa-close {
+  font-size: 120%;
+  margin-top: -5%;
+  padding-right: 5%;
+}
+
 .link,
 .source {
-  font-size: 80%;
+  font-size: 75%;
   margin: 3%;
   margin-top: 7%;
   margin-bottom: 7%;
 }
 
-.container > .buttons > ul >li {
-  font-size: 70%;
+.container > .buttons > ul > li {
+  font-size: 65%;
 }
 
 .container > .buttons > ul {
@@ -636,6 +640,86 @@ font-size: 75%;
     color: #344563;
   }
 
+  .popup {
+    background-color: #c1c7d0c6;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    height: 100vh;
+    margin-top: -7%;
+  }
+  
+  .popup > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #fff;
+    height: 85vh;
+    width: 75vw;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .popup > .container > p {
+    font-size: 80%;
+  }
+  
+  .popup > .container > img {
+    height: 300%;
+    width: auto;
+  }
+  
+  .popup > .container > ul > li {
+    font-size: 94%;
+  }
+
+  .popup > .container > ul {
+    align-self: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0%;
+    margin-left: 3%;
+    width: 50vw;
+    height: 12vh;
+  }
+  
+  .popup > .container > .nameDiv {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .popup > .container > .nameDiv > h3 {
+    margin: 0;
+  }
+  
+  .popup > .container > .nameDiv > .fa-close {
+    font-size: 120%;
+    margin-top: -5%;
+    padding-right: 5%;
+  }
+  
+  .link,
+  .source {
+    font-size: 75%;
+    margin: 3%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+  
+  .container > .buttons > ul > li {
+    font-size: 65%;
+  }
+  
+  .container > .buttons > ul {
+    margin: 4%;
+  }
+
   #work {
     height: 305vh;
     margin: 0;
@@ -690,7 +774,6 @@ font-size: 75%;
   .project {
     padding: 9%;
     padding-bottom: 0;
-    height: 60vh;
     width: 82vw;
   }
 
