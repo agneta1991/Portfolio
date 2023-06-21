@@ -251,7 +251,7 @@ function popupFunction (event){
   nameDiv.appendChild(popuph3);
 
   let popuph3D = document.createElement('h3');
-  popuph3D.className= 'client-name client-name-dektop';
+  popuph3D.className= 'client-name client-name-desktop';
   popuph3D.innerHTML = projects[i].project_name_desktop;
   nameDiv.appendChild(popuph3D);
 
@@ -263,6 +263,7 @@ function popupFunction (event){
   nameDiv.appendChild(iconPopup);
 
   let popupUl = document.createElement('ul');
+  popupUl.className = 'mobile-li';
   const popupInfo = projects[i].project_info_mobile;
   popupInfo.forEach((individualInfoitem) => {
     const popupli = document.createElement('li');
@@ -273,6 +274,7 @@ function popupFunction (event){
   popupContainer.appendChild(popupUl);
 
   let popupUlD = document.createElement('ul');
+  popupUlD.className = 'desktop-li';
   const popupInfoD = projects[i].project_info_desktop;
   popupInfoD.forEach((individualInfoitemD) => {
     const popupliD = document.createElement('li');
