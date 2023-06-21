@@ -301,6 +301,10 @@ h2 {
   background-color: #2230d2;
 }
 
+.buttonContainer {
+  border: 1px solid red;
+}
+
 .second-part {
   border-radius: 0 12% 0 0;
   padding-top: 30%;
@@ -530,6 +534,7 @@ form {
 
 .popup > .container {
   background-color: #fff;
+  border: 1px solid magenta;
 }
 
 @media only screen and (min-width: 768px) {

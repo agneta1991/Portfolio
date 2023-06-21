@@ -216,16 +216,59 @@ seeProjects.forEach((individualProject) => {
   individualProject.addEventListener('touchstart', popupFunction);
 });
 
-/* god knows whats happening here 
 
 function popupFunction (){
-  let popup = document.querySelectorAll('project');
-  popup.forEach(individualProject => {
-    individualProject.classList.add('popup');
-    individualProject.innerHTML = '<h3>' + projects[i] +
-    '<ul>' + '<li class= \'li-mobile\'>' + '<img class=\'image-mobile\>' + 
-    projects[i].image_mobile + projects.description_popup + 
-    '<ul>' + '<li class= \'buttons\'>' + projects[i].technologies_mobile + 
-    '<div class= \'twoButtons\'>' + '</div>'
+  let locationPopup = document.getElementById('wrapperId');
+
+
+  let popupPage = document.createElement('div');
+  popupPage.className = 'project popup';
+  locationPopup.appendChild(popupPage);
+
+  let popupContainer = document.createElement('div');
+  popupContainer.className = 'container';
+  popupPage.appendChild(popupContainer);
+
+  let popuph3 = document.createElement('h3');
+  popuph3.className= 'client-name li-mobile';
+  popuph3.innerHTML = projects[i].project_name_mobile;
+  popupContainer.appendChild(popuph3);
+
+  let popupUl = document.createElement('ul');
+  const popupInfo = projects[i].project_info_mobile;
+  popupInfo.forEach((individualInfoitem) => {
+    const popupli = document.createElement('li');
+    popupli.className = 'li-mobile';
+    popupli.innerHTML = individualInfoitem;
+    popupUl.appendChild(popupli);
   });
-} */
+  popupContainer.appendChild(popupUl);
+
+  let popupimg = document.createElement('img');
+  popupimg.className = 'image-mobile';
+  popupimg.alt = 'Project picture';
+  popupimg.src = projects[i].image_mobile;
+  popupContainer.appendChild(popupimg);
+
+  let popupP = document.createElement('p');
+  popupP.className = 'about-project project-mobile';
+  popupP.innerHTML = projects[i].description_popup;
+  popupContainer.appendChild(popupP);
+
+  let popupSecondDiv = document.createElement('div');
+  popupSecondDiv.className = 'buttonsContainer';
+  popupContainer.appendChild(popupSecondDiv);
+
+  let popupBtn = document.createElement('button')
+  popupBtn.className = 'see-project link';
+  popupBtn.innerHTML = projects[i].link; + 'live'
+  popupBtn.type = 'submit';
+  popupSecondDiv.appendChild(popupBtn);
+
+  let popupSecondBtn = document.createElement('button')
+  popupSecondBtn.className = 'see-project source';
+  popupSecondBtn.type = 'submit';
+  popupSecondBtn.innerHTML = projects[i].source; + 'live'
+  popupSecondDiv.appendChild(popupSecondBtn);
+
+};
