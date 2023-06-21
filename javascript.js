@@ -2,6 +2,7 @@
 const projects = [
   {
 
+    id: 0,
     project_name_mobile: 'Tonic',
     project_name_desktop: 'Tonic',
     project_info_mobile: ['Canopy', 'Back End Dev', 2015],
@@ -13,12 +14,14 @@ const projects = [
     image_desktop: ['images/Snapshoot_Portfolio.png'],
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
     technologies_desktop: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
+    linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
     link: 'https://link-to-live-project.com',
     source: 'https://github.com/username/project-repository',
 
   },
   {
 
+    id: 1,
     project_name_mobile: 'Multi-post Stories',
     project_name_desktop: 'Uber Navvigation',
     project_info_mobile: ['Canopy', 'Back End Dev', 2015],
@@ -30,6 +33,7 @@ const projects = [
     image_desktop: 'images/Snapshoot_Portfolio_(1).png',
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
     technologies_desktop: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
+    linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
     link: 'https://link-to-live-project.com',
     source: 'https://github.com/username/project-repository',
 
@@ -37,6 +41,7 @@ const projects = [
 
   {
 
+    id: 2,
     project_name_mobile: 'Tonic',
     project_name_desktop: 'Tonic',
     project_info_mobile: ['Canopy', 'Back End Dev', 2015],
@@ -48,6 +53,7 @@ const projects = [
     image_desktop: 'images/desktop-pictures/Snapshoot_Portfolio.png',
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
     technologies_desktop: ['HTML', 'CSS', 'JavaScript'],
+    linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
     link: 'https://link-to-live-project.com',
     source: 'https://github.com/username/project-repository',
 
@@ -55,6 +61,7 @@ const projects = [
 
   {
 
+    id: 3,
     project_name_mobile: 'Multi-Post Stories',
     project_name_desktop: 'Multi-Post Stories',
     project_info_mobile: ['Canopy', 'Back End Dev', 2015],
@@ -66,6 +73,7 @@ const projects = [
     image_desktop: 'images/Snapshoot_Portfolio_(3).png',
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
     technologies_desktop: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
+    linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
     link: 'https://link-to-live-project.com',
     source: 'https://github.com/username/project-repository',
 
@@ -219,6 +227,11 @@ seeProjects.forEach((individualProject) => {
 
 function popupFunction (){
   let locationPopup = document.getElementById('wrapperId');
+  locationPopup.scrollIntoView({ behavior: 'smooth' });
+  let i=0;
+for (let index=0; index>= projects.length-1; index+1){
+  i=+1;
+}
 
 
   let popupPage = document.createElement('div');
@@ -229,10 +242,19 @@ function popupFunction (){
   popupContainer.className = 'container';
   popupPage.appendChild(popupContainer);
 
+  let nameDiv = document.createElement('div');
+  nameDiv.className = 'nameDiv';
+  popupContainer.appendChild(nameDiv);
+
   let popuph3 = document.createElement('h3');
   popuph3.className= 'client-name li-mobile';
   popuph3.innerHTML = projects[i].project_name_mobile;
-  popupContainer.appendChild(popuph3);
+  nameDiv.appendChild(popuph3);
+
+  let iconPopup = document.createElement('i');
+  iconPopup.className='fa fa-close';
+  iconPopup.style="color: #67798e;";
+  nameDiv.appendChild(iconPopup);
 
   let popupUl = document.createElement('ul');
   const popupInfo = projects[i].project_info_mobile;
@@ -255,20 +277,34 @@ function popupFunction (){
   popupP.innerHTML = projects[i].description_popup;
   popupContainer.appendChild(popupP);
 
+  const technDiv = document.createElement('div');
+  technDiv.className = 'buttons';
+  popupContainer.appendChild(technDiv);
+
+  const techUl = document.createElement('ul');
+  const techLi = projects[i].technologies_mobile;
+  techLi.forEach((indilTechLiItem) => {
+    const sLi = document.createElement('li');
+    sLi.innerHTML = indilTechLiItem;
+    techUl.appendChild(sLi);
+  });
+
+  technDiv.appendChild(techUl);
+
   let popupSecondDiv = document.createElement('div');
   popupSecondDiv.className = 'buttonsContainer';
   popupContainer.appendChild(popupSecondDiv);
 
   let popupBtn = document.createElement('button')
   popupBtn.className = 'see-project link';
-  popupBtn.innerHTML = projects[i].link; + 'live'
+  popupBtn.innerHTML = 'See live'
   popupBtn.type = 'submit';
   popupSecondDiv.appendChild(popupBtn);
 
   let popupSecondBtn = document.createElement('button')
   popupSecondBtn.className = 'see-project source';
   popupSecondBtn.type = 'submit';
-  popupSecondBtn.innerHTML = projects[i].source; + 'live'
+  popupSecondBtn.innerHTML = 'See source';
   popupSecondDiv.appendChild(popupSecondBtn);
 
 };

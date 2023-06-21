@@ -301,10 +301,6 @@ h2 {
   background-color: #2230d2;
 }
 
-.buttonContainer {
-  border: 1px solid red;
-}
-
 .second-part {
   border-radius: 0 12% 0 0;
   padding-top: 30%;
@@ -528,13 +524,61 @@ form {
   background-color: #c1c7d0c6;
   backdrop-filter: blur(5px);
   position: absolute;
-  height: 100vh;
+  height: 95vh;
   top: 0;
 }
 
 .popup > .container {
   background-color: #fff;
-  border: 1px solid magenta;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.popup > .container > p {
+  font-size: 88%;
+}
+
+.popup > .container > img {
+  height: 87%;
+  width: auto;
+}
+
+.popup > .container > ul > li {
+font-size: 75%;
+}
+
+.popup > .container > .nameDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.popup > .container > .nameDiv > .fa-close{
+  margin-top: 0;
+  font-size: 120%;
+  padding-right: 5%;
+  padding-top: 8%;
+}
+.link,
+.source {
+  font-size: 80%;
+  margin: 3%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.container > .buttons > ul >li {
+  font-size: 70%;
+}
+
+.container > .buttons > ul {
+  margin: 4%;
 }
 
 @media only screen and (min-width: 768px) {
