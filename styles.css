@@ -521,14 +521,16 @@ form {
 .popup {
   background-color: #c1c7d0c6;
   backdrop-filter: blur(5px);
-  position: absolute;
+  position: fixed;
+  overflow-y: auto;
   height: 95vh;
-  min-height: 727px;
+  max-height: 100vh;
   top: 0;
 }
 
 .popup > .container {
   background-color: #fff;
+  max-height: 99vh;
 }
 
 .buttonsContainer {
@@ -663,9 +665,10 @@ form {
   .popup {
     background-color: #c1c7d0c6;
     backdrop-filter: blur(5px);
-    position: absolute;
+    position: fixed;
+    overflow-y: auto;
     height: 110vh;
-    min-height: 1470px;
+    max-height: 100vh;
     margin-top: -7%;
   }
 
