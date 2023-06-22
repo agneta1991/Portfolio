@@ -163,6 +163,12 @@ h2 {
   width: 77vw;
 }
 
+.link > img,
+.source > img {
+  width: 15%;
+  padding-left: 5%;
+}
+
 .dropdown-content > a > img {
   padding: 12px;
 }
@@ -213,15 +219,6 @@ h2 {
   line-height: 16px;
   text-align: left;
   color: #7a869a;
-}
-
-.container > ul {
-  display: flex;
-  justify-content: left;
-  gap: 12%;
-  align-items: flex-start;
-  padding: 0;
-  margin: 3%;
 }
 
 .container > ul > .name {
@@ -406,12 +403,6 @@ h2 {
   text-align: right;
 }
 
-.link > img,
-.source > img {
-  width: 15%;
-  padding-left: 5%;
-}
-
 #contact-form {
   height: 100vh;
 }
@@ -522,7 +513,7 @@ form {
 .about-project-desktop,
 .client-name-desktop,
 .li-desktop,
-.project-desktop
+.project-desktop,
 .desktop-div {
   display: none;
 }
@@ -588,6 +579,15 @@ form {
   font-size: 65%;
 }
 
+.container > ul {
+  display: flex;
+  justify-content: left;
+  gap: 12%;
+  align-items: flex-start;
+  padding: 0;
+  margin: 3%;
+}
+
 .container > .buttons > ul {
   margin: 4%;
 }
@@ -596,7 +596,7 @@ form {
 .desktop-li,
 .desktop-div,
 .client-name-desktop,
-.project-desktop{
+.project-desktop {
   display: none;
 }
 
@@ -604,8 +604,9 @@ form {
   /* animation and transition */
   .desktop-div,
   .li-desktop {
-    display:block;
+    display: block;
   }
+
   img {
     transition: rotate 1s;
   }
@@ -667,7 +668,16 @@ form {
     min-height: 1470px;
     margin-top: -7%;
   }
-  
+
+  .container {
+    border: 1px solid #dfe1e6;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 0;
+    height: 53vh;
+    padding: 2rem;
+  }
+
   .popup > .container {
     grid-template-rows: auto;
     grid-template-columns: 70% 30%;
@@ -683,7 +693,7 @@ form {
     margin: 0;
     padding-left: 2vw;
   }
-  
+
   .buttonsContainer {
     align-items: center;
     justify-content: center;
@@ -696,18 +706,17 @@ form {
     align-self: center;
     margin-top: -40%;
   }
-  
+
   .buttonsContainer > button {
     margin-left: 1%;
     font-size: 100%;
   }
-  
+
   .desktop-div {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 5;
     grid-row-end: 6;
-
   }
 
   .desktop-div > .p-desktop {
@@ -717,7 +726,31 @@ form {
   .popup > .container > p {
     font-size: 100%;
   }
-  
+
+  .link > img,
+  .source > img {
+    width: 15%;
+    padding-left: 10%;
+  }
+
+  .container > img {
+    width: 36.7vw;
+    grid-row: 1 / 7;
+    padding: 3%;
+    padding-right: 0;
+  }
+
+  .dropdown-content > a > img {
+    padding: 0;
+    width: 4.5vw;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .socials > ul > li > a > img {
+    width: 1.4vw;
+  }
+
   .popup > .container > img {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -725,9 +758,35 @@ form {
     grid-row-end: 3;
     width: 95%;
   }
-  
+
+  .container > ul > li {
+    font-size: 1.2vw;
+    margin: 0;
+  }
+
+  .buttons > ul > li {
+    margin: 2%;
+    font-size: 0.85vw;
+    font-weight: 50;
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    border-radius: 0.3rem;
+  }
+
   .popup > .container > ul > li {
     font-size: 94%;
+  }
+
+  .container > ul {
+    margin: 7%;
+    margin-right: 0;
+    height: 3vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  .buttons > ul {
+    margin: 0;
   }
 
   .popup > .container > ul {
@@ -735,7 +794,6 @@ form {
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
-    align-self: flex-start;
     margin-top: 2%;
     margin-bottom: 0;
     margin-right: 0%;
@@ -744,7 +802,7 @@ form {
     height: 3vh;
     align-self: end;
   }
-  
+
   .popup > .container > .nameDiv {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -755,19 +813,18 @@ form {
     margin: 0;
     align-self: center;
   }
-  
 
   .popup > .container > .nameDiv > h3 {
     margin: 0;
   }
-  
+
   .popup > .container > .nameDiv > .fa-close {
     font-size: 120%;
     padding-right: 5%;
     padding-top: 0;
     height: 1%;
   }
-  
+
   .link,
   .source {
     font-size: 70%;
@@ -775,20 +832,14 @@ form {
     margin-bottom: 0;
   }
 
-  .link > img,
-  .source > img {
-    width: 15%;
-    padding-left: 10%;
-  }
-
   .container > ul.mobile-li {
     display: none;
   }
-  
+
   .container > .buttons > ul > li {
     font-size: 65%;
   }
-  
+
   .container > .buttons > ul {
     margin: 4%;
   }
@@ -850,15 +901,6 @@ form {
     width: 82vw;
   }
 
-  .container {
-    border: 1px solid #dfe1e6;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 0;
-    height: 53vh;
-    padding: 2rem;
-  }
-
   .project-1 {
     order: 3;
   }
@@ -878,13 +920,6 @@ form {
 
   .project-4 {
     order: 2;
-  }
-
-  .container > img {
-    width: 36.7vw;
-    grid-row: 1 / 7;
-    padding: 3%;
-    padding-right: 0;
   }
 
   .li-desktop {
@@ -915,15 +950,6 @@ form {
     margin: 2%;
     font-size: 2.78vw;
     grid-row: 2/3;
-  }
-
-  .container > ul {
-    margin: 7%;
-    margin-right: 0;
-    height: 3vh;
-    margin-top: 0;
-    margin-bottom: 0;
-    align-self: center;
   }
 
   .container > ul > .name {
@@ -977,36 +1003,8 @@ form {
     text-shadow: 0.5px 0.5px 0.5px red, 0 0 1em blue, 0 0 0.1em blue;
   }
 
-  .container > ul > li {
-    font-size: 1.2vw;
-    margin: 0;
-  }
-
   .second-text {
     grid-row: 2/3;
-  }
-
-  .buttons > ul > li {
-    margin: 2%;
-    font-size: 0.85vw;
-    font-weight: 50;
-    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-    border-radius: 0.3rem;
-  }
-
-  .buttons > ul {
-    margin: 0;
-  }
-
-  .dropdown-content > a > img {
-    padding: 0;
-    width: 4.5vw;
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
-
-  .socials > ul > li > a > img {
-    width: 1.4vw;
   }
 
   /* about myself */
