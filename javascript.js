@@ -313,9 +313,14 @@ function popupFunction (event){
   popupContainer.appendChild(wrapperDiv);
 
   let popupPD = document.createElement('p');
-  popupPD.className = 'about-project project-desktop';
+  popupPD.className = 'about-project project-desktop p-desktop';
   popupPD.innerHTML = projects[i].description_popup;
   wrapperDiv.appendChild(popupPD);
+
+  let popupPDe = document.createElement('p');
+  popupPDe.className = 'about-project project-desktop';
+  popupPDe.innerHTML = projects[i].description_popup + '<br> <br>' + projects[i].description_popup + '<br> <br>';
+  wrapperDiv.appendChild(popupPDe);
 
   const technDiv = document.createElement('div');
   technDiv.className = 'buttons';
@@ -335,25 +340,29 @@ function popupFunction (event){
   popupSecondDiv.className = 'buttonsContainer';
   popupContainer.appendChild(popupSecondDiv);
 
-  let popupBtn = document.createElement('button')
-  popupBtn.className = 'see-project link';
-  popupBtn.innerHTML = 'See live'
-  popupBtn.type = 'submit';
-  popupSecondDiv.appendChild(popupBtn);
 
-  let popupSecondBtn = document.createElement('button')
-  popupSecondBtn.className = 'see-project source';
-  popupSecondBtn.type = 'submit';
-  popupSecondBtn.innerHTML = 'See source';
-  popupSecondDiv.appendChild(popupSecondBtn);
+let popupBtn = document.createElement('button');
+popupBtn.className = 'see-project link';
+let iconImg = document.createElement('img');
+iconImg.src = 'images/desktop-pictures/see_live.jpg';
+iconImg.alt = 'See live';
+let textElement = document.createTextNode('See live');
+popupBtn.appendChild(textElement);
+popupBtn.appendChild(iconImg);
+popupBtn.type = 'submit';
+popupSecondDiv.appendChild(popupBtn);
+
+
+let secongpopupBtn = document.createElement('button');
+secongpopupBtn.className = 'see-project source';
+let secongiconImg = document.createElement('img');
+secongiconImg.src = 'images/desktop-pictures/see_source.jpg';
+secongiconImg.alt = 'See live';
+let secongtextElement = document.createTextNode('See source');
+secongpopupBtn.appendChild(secongtextElement);
+secongpopupBtn.appendChild(secongiconImg);
+secongpopupBtn.type = 'submit';
+popupSecondDiv.appendChild(secongpopupBtn);
+
 
 };
-
-const closeIcons = document.querySelectorAll('[id^="fa-close"]');
-closeIcons.forEach((icon) => {
-  icon.addEventListener('click', closePopup);
-});
-
-function closePopup(event) {
-  location.reload;
-}

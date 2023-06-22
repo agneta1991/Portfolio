@@ -406,6 +406,12 @@ h2 {
   text-align: right;
 }
 
+.link > img,
+.source > img {
+  width: 15%;
+  padding-left: 5%;
+}
+
 #contact-form {
   height: 100vh;
 }
@@ -658,19 +664,19 @@ form {
     backdrop-filter: blur(5px);
     position: absolute;
     height: 110vh;
-    min-height: 1240px;
+    min-height: 1470px;
     margin-top: -7%;
   }
   
   .popup > .container {
     grid-template-rows: auto;
-    grid-template-columns: auto;
+    grid-template-columns: 70% 30%;
     background-color: #fff;
     height: 100vh;
     width: 90vw;
     margin-left: 0;
     margin-right: 0;
-    min-height: 1163px;
+    min-height: 1350px;
   }
 
   .container > * {
@@ -688,11 +694,12 @@ form {
     grid-row-start: 5;
     grid-row-end: 6;
     align-self: center;
-    width: 110%;
+    margin-top: -40%;
   }
   
   .buttonsContainer > button {
     margin-left: 1%;
+    font-size: 100%;
   }
   
   .desktop-div {
@@ -700,7 +707,11 @@ form {
     grid-column-end: 1;
     grid-row-start: 5;
     grid-row-end: 6;
-    width: 90%;
+
+  }
+
+  .desktop-div > .p-desktop {
+    display: none;
   }
 
   .popup > .container > p {
@@ -762,6 +773,12 @@ form {
     font-size: 70%;
     margin-top: 7%;
     margin-bottom: 0;
+  }
+
+  .link > img,
+  .source > img {
+    width: 15%;
+    padding-left: 10%;
   }
 
   .container > ul.mobile-li {
