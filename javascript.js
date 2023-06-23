@@ -371,7 +371,7 @@ contactForm.addEventListener('submit', function(event) {
     document.getElementById('error').innerHTML= '*Email must be in lowercase letters!';
     event.preventDefault();
     emailInput.value = '';
-    emailInput.focus(); 
+    emailInput.focus();
     return;
   }
 
@@ -382,20 +382,18 @@ contactForm.addEventListener('submit', function(event) {
 const form = document.getElementById('form');
 let collectedInputData;
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
   const formInputData = new FormData(event.target);
   collectedInputData = {};
   formInputData.forEach((value, key) => {
     collectedInputData[key] = value;
   });
   const formData = JSON.stringify(collectedInputData);
-  localStorage.setItem('Collected Data', formData);
+  localStorage.setItem('Collected-Data', formData);
 });
 
-const userData = JSON.parse(localStorage.getItem('Collected Data'));
-const body = document.getElementById('body');
-body.onload = () => {
-  email.value = userData.email;
-  document.getElementById('text').value = userData.text;
-  document.getElementById('textarea').value = userData.message;
+let savedDate = JSON.parse(localStorage.getItem('Collected-Data'));
+window.onload = () => {
+  document.getElementById('email').value = savedDate.email;
+  document.getElementById('text').value = savedDate.name;
+  document.getElementById('textaera').value = savedDate.message;
 };
