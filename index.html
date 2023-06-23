@@ -15,7 +15,7 @@
     <title>Portfolio</title>
 </head>
 
-<body>
+<body id="body">
     <section id="wrapperId" class="wrapper-1">
         <header class="toolbar">
             <a href="/" class="logo">My Logo</a>
@@ -270,16 +270,16 @@
                     need
                     built or a project that needs coding.
                     I’d love to help with it!</p>
-                <form action="https://formspree.io/f/myyaqdnr" method="post">
+                <form id='form' action="https://formspree.io/f/myyaqdnr" method="post">
                     <label for="name">
-                        <input type="text" name="name" placeholder="Enter your name" minlength="1" maxlength="30"
+                        <input id='text' type="text" name="name" placeholder="Enter your name" minlength="1" maxlength="30"
                             required />
                     </label>
                     <label for="email">
                         <input id='email' type="email" name="email" placeholder="Enter your email" required />
                     </label>
                     <label for="message" class="message-label">
-                        <textarea type="message" name="message" placeholder="Write your message here..."
+                        <textarea id='textaera' type="message" name="message" placeholder="Write your message here..."
                             aria-multiline="1" maxlength="500" required></textarea>
                     </label>
                     <div id="error"></div>

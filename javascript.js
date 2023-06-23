@@ -376,3 +376,26 @@ contactForm.addEventListener('submit', function(event) {
   }
 
 });
+
+/*localStorage*/
+
+const form = document.getElementById('form');
+let collectedInputData;
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formInputData = new FormData(event.target);
+  collectedInputData = {};
+  formInputData.forEach((value, key) => {
+    collectedInputData[key] = value;
+  });
+  const formData = JSON.stringify(collectedInputData);
+  localStorage.setItem('Collected Data', formData);
+});
+
+const userData = JSON.parse(localStorage.getItem('Collected Data'));
+const body = document.getElementById('body');
+body.onload = () => {
+  email.value = userData.email;
+  document.getElementById('text').value = userData.text;
+  document.getElementById('textarea').value = userData.message;
+};
