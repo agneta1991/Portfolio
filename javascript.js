@@ -2,59 +2,59 @@ const projects = [
   {
 
     id: 0,
-    project_name_mobile: 'Tonic',
-    project_name_desktop: 'Tonic',
-    project_info_mobile: ['Canopy', 'Back End Dev', 2015],
-    project_info_desktop: ['Facebook', 'Back End Dev', 2015],
-    description_mobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description_desktop: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    description_popup: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image_mobile: ['images/Snapshoot_Portfolio.png'],
-    image_desktop: ['images/Snapshoot_Portfolio.png'],
+    project_name_mobile: 'Microverse project',
+    project_name_desktop: 'Microverse project',
+    project_info_mobile: ['Music Festival', 'Front End', 2023],
+    project_info_desktop: ['HeavyFury', 'Front End', 2023],
+    description_mobile: 'A screenshot of a music festival webpage with mobile version',
+    description_desktop: 'A screenshot of a fictional music festival dynamically created webpage with it\'s mobile version. Easily updatable via JavaScript file.',
+    description_popup: 'A fictional music festival companies webpage, where it shows a daily program, a headliners of the show. It has multiple pages, main page displaying the upcoming show and an about page displaying information on logo and how it is made. Page itself is very easy to update via JavaScript file, where headliners can be swapped around, pictures can be easily changed and information updated. ',
+    image_mobile: ['images/capstone-screens.jpg'],
+    image_desktop: ['images/capstone-screens.jpg'],
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
-    technologies_desktop: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
+    technologies_desktop: ['HTML', 'CSS', 'JavaScript'],
     linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
-    link: 'https://link-to-live-project.com',
-    source: 'https://github.com/username/project-repository',
+    link: 'https://agneta1991.github.io/Capstone_project/',
+    source: 'https://github.com/agneta1991/Capstone_project/',
 
   },
   {
 
     id: 1,
-    project_name_mobile: 'Multi-post Stories',
-    project_name_desktop: 'Uber Navvigation',
-    project_info_mobile: ['Canopy', 'Back End Dev', 2015],
-    project_info_desktop: ['Uber', 'Lead Developer', 2015],
-    description_mobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description_desktop: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    description_popup: 'Lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only electronic typesetting, remaining essent',
-    image_mobile: 'images/Snapshoot_Portfolio_(1).png',
-    image_desktop: 'images/Snapshoot_Portfolio_(1).png',
+    project_name_mobile: 'Microverse project',
+    project_name_desktop: 'Microverse project',
+    project_info_mobile: ['Awesome Books', 'Front End', 2023],
+    project_info_desktop: ['Awesome Books', 'Full stack dev', 2023],
+    description_mobile: 'A screenshot of an Awesome books project',
+    description_desktop: 'A screenshot of a simple Awesome Books project, where code is written within one HTML file, and dynamical JavaScript. Has a local storage set up too!',
+    description_popup: 'An Awsome Books project is a simple JavaScript based project, where page is created using linked lists, page also has a local storage set up so no worries for a user to loose all their information on their created list. User can add, or remove books, which is automatically updated within local storrage',
+    image_mobile: 'images/awesome-books2.jpg',
+    image_desktop: 'images/awesome-books2.jpg',
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
-    technologies_desktop: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
+    technologies_desktop: ['HTML', 'CSS', 'JavaScript'],
     linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
     link: 'https://link-to-live-project.com',
-    source: 'https://github.com/username/project-repository',
+    source: 'https://github.com/agneta1991/Awesome-books-with-ES6',
 
   },
 
   {
 
     id: 2,
-    project_name_mobile: 'Tonic',
-    project_name_desktop: 'Tonic',
-    project_info_mobile: ['Canopy', 'Back End Dev', 2015],
-    project_info_desktop: ['Canopy', 'Back End Dev', 2015],
-    description_mobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description_desktop: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description_popup: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image_mobile: 'images/Snapshoot_Portfolio_(2).png',
-    image_desktop: 'images/desktop-pictures/Snapshoot_Portfolio.png',
+    project_name_mobile: 'Microverse project',
+    project_name_desktop: 'Microverse project',
+    project_info_mobile: ['To Do List', 'Full stack', 2023],
+    project_info_desktop: ['To Do List', 'Full stack', 2023],
+    description_mobile: 'A screenshot of a simple to do list webpage',
+    description_desktop: 'A screenshot of a simple to do list, where user can add, edit or delete tasks. Page is set up with local storage too!',
+    description_popup: 'A screenshot of a simple to do list webpage, where user can add, edit or delete tasks. Page has been created dynamically according to users imputs, it also has all the to do list uploaded to local storage, so user can exit the page without worrying that information will be gone!',
+    image_mobile: 'images/to-do-list-2.jpg',
+    image_desktop: 'images/to-do-list-2.jpg',
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
     technologies_desktop: ['HTML', 'CSS', 'JavaScript'],
     linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
-    link: 'https://link-to-live-project.com',
-    source: 'https://github.com/username/project-repository',
+    link: 'https://agneta1991.github.io/to-do-list/dist/',
+    source: 'https://github.com/agneta1991/to-do-list',
 
   },
 
@@ -311,7 +311,7 @@ function popupFunction(event) {
 
   const popupPDe = document.createElement('p');
   popupPDe.className = 'about-project project-desktop';
-  popupPDe.innerHTML = `${projects[i].description_popup}<br> <br>${projects[i].description_popup}<br> <br>`;
+  popupPDe.innerHTML = `${projects[i].description_popup}<br>`;
   wrapperDiv.appendChild(popupPDe);
 
   const technDiv = document.createElement('div');
@@ -379,21 +379,21 @@ contactForm.addEventListener('submit', function(event) {
 
 /*localStorage*/
 
-const form = document.getElementById('form');
-let collectedInputData;
-form.addEventListener('submit', (event) => {
-  const formInputData = new FormData(event.target);
-  collectedInputData = {};
-  formInputData.forEach((value, key) => {
-    collectedInputData[key] = value;
-  });
-  const formData = JSON.stringify(collectedInputData);
-  localStorage.setItem('Collected-Data', formData);
-});
+// const form = document.getElementById('form');
+// let collectedInputData;
+// form.addEventListener('submit', (event) => {
+//   const formInputData = new FormData(event.target);
+//   collectedInputData = {};
+//   formInputData.forEach((value, key) => {
+//     collectedInputData[key] = value;
+//   });
+//   const formData = JSON.stringify(collectedInputData);
+//   localStorage.setItem('Collected-Data', formData);
+// });
 
-let savedDate = JSON.parse(localStorage.getItem('Collected-Data'));
-window.onload = () => {
-  document.getElementById('email').value = savedDate.email;
-  document.getElementById('text').value = savedDate.name;
-  document.getElementById('textaera').value = savedDate.message;
-};
+// let savedDate = JSON.parse(localStorage.getItem('Collected-Data'));
+// window.onload = () => {
+//   document.getElementById('email').value = savedDate.email;
+//   document.getElementById('text').value = savedDate.name;
+//   document.getElementById('textaera').value = savedDate.message;
+// };

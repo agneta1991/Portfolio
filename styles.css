@@ -157,6 +157,7 @@ h2 {
 
 .project > img {
   border-radius: 8px;
+  width: 50vw;
 }
 
 .container > img {
@@ -530,7 +531,7 @@ form {
 
 .popup > .container {
   background-color: #fff;
-  max-height: 99vh;
+  height: 120%;
 }
 
 .buttonsContainer {
@@ -546,8 +547,9 @@ form {
 }
 
 .popup > .container > img {
-  height: 86%;
+  height: 45vw;
   width: auto;
+  place-self: center;
 }
 
 .popup > .container > ul > li {
@@ -609,14 +611,6 @@ form {
     display: block;
   }
 
-  img {
-    transition: rotate 1s;
-  }
-
-  img:hover {
-    rotate: 360deg;
-  }
-
   .menu-logo {
     display: none;
   }
@@ -627,21 +621,6 @@ form {
     height: 3.4vh;
     position: relative;
     justify-content: space-around;
-    animation: change-color 5s;
-  }
-
-  @keyframes change-color {
-    0% {
-      background-color: #fff;
-    }
-
-    50% {
-      background-color: #7f8cff69;
-    }
-
-    100% {
-      background-color: #fff;
-    }
   }
 
   .toolbar-links {
@@ -704,8 +683,8 @@ form {
     padding-left: 0;
     grid-column-start: 2;
     grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
     align-self: center;
     margin-top: -40%;
   }
@@ -718,8 +697,8 @@ form {
   .desktop-div {
     grid-column-start: 1;
     grid-column-end: 1;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
   }
 
   .desktop-div > .p-desktop {
@@ -760,6 +739,7 @@ form {
     grid-row-start: 3;
     grid-row-end: 3;
     width: 95%;
+    height: auto;
   }
 
   .container > ul > li {
@@ -969,8 +949,8 @@ form {
     margin-bottom: 0;
     grid-column-start: 2;
     grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
     align-self: start;
     height: 20%;
   }
