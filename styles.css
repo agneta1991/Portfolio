@@ -141,18 +141,20 @@ h2 {
 .socials {
   padding-top: 12px;
   padding-right: 0;
+  margin-left: 3%;
 }
 
 .socials > ul {
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-columns: repeat(5, 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .socials > ul > li {
   list-style: none;
-  padding: 4px;
+  padding: 1rem;
 }
 
 .project > img {
@@ -161,7 +163,7 @@ h2 {
 }
 
 .container > img {
-  width: 77vw;
+  width: 77%;
 }
 
 .link > img,
@@ -371,7 +373,7 @@ h2 {
   border-bottom: 1px solid #dfe1e6;
   display: grid;
   grid-template-columns: 80% 20%;
-  grid-row: 2;
+  width: 25rem;
   gap: 18px;
 }
 
@@ -730,7 +732,7 @@ form {
   }
 
   .socials > ul > li > a > img {
-    width: 1.4vw;
+    width: 2rem;
   }
 
   .popup > .container > img {
@@ -828,7 +830,7 @@ form {
   }
 
   #work {
-    height: 305vh;
+    height: 317vh;
     margin: 0;
     padding: 0;
     display: flex;
@@ -844,7 +846,14 @@ form {
   }
 
   .about {
-    font-size: 1.3889vw;
+    font-size: 1.7rem;
+    margin-left: 3%;
+    width: 60%;
+    padding: 2rem;
+    line-height: normal;
+  }
+
+  .lets_connect {
     margin-left: 3%;
   }
 
@@ -854,22 +863,18 @@ form {
   }
 
   .headline {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     background-image: url(images/desktop-pictures/Header\ bg.png);
     background-color: #fff;
     background-position: contain;
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 15%;
-    padding-top: 20%;
     padding-bottom: 0;
     border-radius: 0 0 0 180px;
-    height: 70vh;
-    justify-content: start;
-    width: 70vw;
-  }
-
-  .headline > * {
-    padding: 12px;
+    box-sizing: border-box;
+    height: 90vh;
   }
 
   .wrapper-container {
@@ -976,31 +981,62 @@ form {
   }
 
   .greeting {
-    font-size: 3.334vw;
-    grid-row: 1/2;
+    font-size: 4rem;
     margin-left: 3%;
-    transition: all 0.5s ease-in-out;
+    text-align: left;
   }
 
-  .greeting:hover,
-  .greeting:focus {
-    text-shadow: 0.5px 0.5px 0.5px red, 0 0 1em blue, 0 0 0.1em blue;
+  #left-side > .greeting {
+    font-size: 3rem;
   }
 
-  .second-text {
-    grid-row: 2/3;
+  #dimage0,
+  #dimage1,
+  #dimage2,
+  #dimage3 {
+    width: 70%;
   }
 
-  /* about myself */
-  #headline-two {
-    display: grid;
-    grid-template-columns: repeat(2, 40% 60%);
-    grid-template-rows: repeat(5, auto-fill);
-    padding: 8.2% 8.2% 4.2% 8.2%;
-    background-color: #fff;
-    border-radius: 0 20% 0 0;
-    width: 86vw;
-    height: 57vh;
+  #right-side,
+  #left-side {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  #left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+  }
+
+  #left-side > p {
+    font-size: 1.2rem;
+  }
+
+  #left-side > #text {
+    margin: 0;
+    margin-right: 0;
+    width: 70%;
+  }
+
+  .wrapper-contact > div > h2 {
+    font-size: 3vw;
+  }
+
+  #left-side > h2 {
+    font-size: 1.2rem;
+    margin-left: 3%;
+  }
+
+  #left-side > .socials {
+    width: 30%;
+    margin: 0;
+  }
+
+  #left-side > .socials > ul > li {
+    padding: 0;
+    padding-right: 1rem;
   }
 
   .wrapper-contact > * {
@@ -1010,13 +1046,29 @@ form {
     justify-self: start;
   }
 
+  #right-side {
+    width: 40%;
+  }
+
+  #right-side > * {
+    margin: 0;
+    width: 50%;
+    margin-top: 30%;
+  }
+
+  #headline-two {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 4.2% 4.2% 2.2% 2.2%;
+    background-color: #fff;
+    border-radius: 0 20% 0 0;
+    margin-top: 6rem;
+  }
+
   #headline-two > * {
     margin-top: 0;
     margin-bottom: 0;
-  }
-
-  .wrapper-contact > div > h2 {
-    font-size: 3vw;
   }
 
   #headline-two > h2 {
@@ -1040,13 +1092,12 @@ form {
   }
 
   #resume {
-    grid-row: 5/6;
     width: 14.5vw;
-    height: 6vh;
-    padding: 2%;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 2%;
+    height: 4rem;
+    align-self: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-left: 1rem;
   }
 
   .dropbtn {
@@ -1055,8 +1106,8 @@ form {
   }
 
   .dropdowns {
-    grid-column: 2 / 3;
-    grid-row: 1/6;
+    margin: 0;
+    width: auto;
   }
 
   .list-of-dropdowns {
