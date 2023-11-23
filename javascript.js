@@ -1,81 +1,89 @@
 const projects = [
   {
-
     id: 0,
     project_name_mobile: 'Microverse project',
     project_name_desktop: 'Microverse project',
     project_info_mobile: ['Music Festival', 'Front End', 2023],
     project_info_desktop: ['HeavyFury', 'Front End', 2023],
-    description_mobile: 'A screenshot of a music festival webpage with mobile version',
-    description_desktop: 'A screenshot of a fictional music festival dynamically created webpage with it\'s mobile version. Easily updatable via JavaScript file.',
-    description_popup: 'A fictional music festival companies webpage, where it shows a daily program, a headliners of the show. It has multiple pages, main page displaying the upcoming show and an about page displaying information on logo and how it is made. Page itself is very easy to update via JavaScript file, where headliners can be swapped around, pictures can be easily changed and information updated. ',
+    description_mobile:
+      'A screenshot of a music festival webpage with mobile version',
+    description_desktop:
+      "A screenshot of a fictional music festival dynamically created webpage with it's mobile version. Easily updatable via JavaScript file.",
+    description_popup:
+      'A fictional music festival companies webpage, where it shows a daily program, a headliners of the show. It has multiple pages, main page displaying the upcoming show and an about page displaying information on logo and how it is made. Page itself is very easy to update via JavaScript file, where headliners can be swapped around, pictures can be easily changed and information updated. ',
     image_mobile: ['images/capstone-screens.jpg'],
     image_desktop: ['images/capstone-screens.jpg'],
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
     technologies_desktop: ['HTML', 'CSS', 'JavaScript'],
-    linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
+    linkicon: [
+      '<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>',
+    ],
     link: 'https://agneta1991.github.io/Capstone_project/',
     source: 'https://github.com/agneta1991/Capstone_project/',
-
   },
   {
-
     id: 1,
     project_name_mobile: 'Microverse project',
     project_name_desktop: 'Microverse project',
-    project_info_mobile: ['Awesome Books', 'Front End', 2023],
-    project_info_desktop: ['Awesome Books', 'Full stack dev', 2023],
-    description_mobile: 'A screenshot of an Awesome books project',
-    description_desktop: 'A screenshot of a simple Awesome Books project, where code is written within one HTML file, and dynamical JavaScript. Has a local storage set up too!',
-    description_popup: 'An Awsome Books project is a simple JavaScript based project, where page is created using linked lists, page also has a local storage set up so no worries for a user to loose all their information on their created list. User can add, or remove books, which is automatically updated within local storrage',
-    image_mobile: 'images/awesome-books2.jpg',
-    image_desktop: 'images/awesome-books2.jpg',
-    technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
-    technologies_desktop: ['HTML', 'CSS', 'JavaScript'],
-    linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
-    link: 'https://link-to-live-project.com',
-    source: 'https://github.com/agneta1991/Awesome-books-with-ES6',
-
+    project_info_mobile: ['Budget app', 'Back End', 2023],
+    project_info_desktop: ['Budget app', 'Full stack dev', 2023],
+    description_mobile: 'A screenshot of an Budget app project',
+    description_desktop:
+      'Track and manage your expenses effortlessly with our budget app. Create personalized spending categories, input expenditures, and customize category icons with any image URL for a tailored financial experience',
+    image_mobile: 'images/desktop-pictures/budget.png',
+    image_desktop: 'images/desktop-pictures/budget.png',
+    technologies_mobile: ['Ruby on Rails', 'CSS'],
+    technologies_desktop: ['Ruby on Rails', 'CSS'],
+    linkicon: [
+      '<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>',
+    ],
+    link: 'https://dugetapp.onrender.com',
+    source: 'https://github.com/agneta1991/Budget-app-capstone',
   },
 
   {
-
     id: 2,
     project_name_mobile: 'Microverse project',
     project_name_desktop: 'Microverse project',
     project_info_mobile: ['To Do List', 'Full stack', 2023],
     project_info_desktop: ['To Do List', 'Full stack', 2023],
-    description_mobile: 'A screenshot of a simple to do list webpage',
-    description_desktop: 'A screenshot of a simple to do list, where user can add, edit or delete tasks. Page is set up with local storage too!',
-    description_popup: 'A screenshot of a simple to do list webpage, where user can add, edit or delete tasks. Page has been created dynamically according to users imputs, it also has all the to do list uploaded to local storage, so user can exit the page without worrying that information will be gone!',
-    image_mobile: 'images/to-do-list-2.jpg',
-    image_desktop: 'images/to-do-list-2.jpg',
+    description_mobile: 'A screenshot of a simple to-do list webpage',
+    description_desktop:
+      'A screenshot of a simple to-do list, where users can add, edit or delete tasks. Page is set up with local storage too!',
+    description_popup:
+      "A screenshot of a simple to-do list webpage, where users can add, edit or delete tasks. Page has been created dynamically according to users' inputs, it also has all the to-do list uploaded to local storage, so the user can exit the page without worrying that information will be gone!",
+    image_mobile: ['images/to-do-list-2.jpg'],
+    image_desktop: ['images/to-do-list-2.jpg'],
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
     technologies_desktop: ['HTML', 'CSS', 'JavaScript'],
-    linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
+    linkicon: [
+      '<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>',
+    ],
     link: 'https://agneta1991.github.io/to-do-list/dist/',
     source: 'https://github.com/agneta1991/to-do-list',
-
   },
 
   {
-
     id: 3,
-    project_name_mobile: 'Multi-Post Stories',
-    project_name_desktop: 'Multi-Post Stories',
-    project_info_mobile: ['Canopy', 'Back End Dev', 2015],
-    project_info_desktop: ['Facebook', 'Full Stack Dev', 2015],
-    description_mobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description_desktop: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    description_popup: 'Lorem Ipsum is simply dummy text of the printing and. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only electronic typesetting, remaining essent',
-    image_mobile: 'images/Snapshoot_Portfolio_(3).png',
-    image_desktop: 'images/Snapshoot_Portfolio_(3).png',
+    project_name_mobile: 'Social media app',
+    project_name_desktop: 'Social media app',
+    project_info_mobile: ['Microverse', 'Back End Dev', 2023],
+    project_info_desktop: ['Microverse', 'Back end', 2023],
+    description_mobile:
+      'An app whee user can add posts, comments and likes, to theirs or other users posts',
+    description_desktop:
+      'Introducing a versatile social platform where users can seamlessly create and share posts, engage with content through comments, and express appreciation with likes. This app empowers users to personalize their digital space by curating their own posts, comments and liking others posts.',
+    description_popup:
+      "Introducing a versatile social platform where users can seamlessly create and share posts, engage with content through comments, and express appreciation with likes. This app empowers users to personalize their digital space by not only curating their own posts but also interacting with the vibrant community through meaningful comments and likes on others' content. Connect, share, and build a dynamic online presence with our user-friendly interface.",
+    image_mobile: 'images/desktop-pictures/social.jpg',
+    image_desktop: 'images/desktop-pictures/social.jpg',
     technologies_mobile: ['HTML', 'CSS', 'JavaScript'],
     technologies_desktop: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
-    linkicon: ['<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>'],
+    linkicon: [
+      '<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>',
+    ],
     link: 'https://link-to-live-project.com',
     source: 'https://github.com/username/project-repository',
-
   },
 ];
 
@@ -362,22 +370,19 @@ seeProjects.forEach((individualProject) => {
 
 const contactForm = document.getElementById('contact-form');
 
-contactForm.addEventListener('submit', function(event) {
-
+contactForm.addEventListener('submit', (event) => {
   const emailInput = document.getElementById('email');
   const emailValue = emailInput.value;
   const lowercaseEmail = emailValue.toLowerCase();
   if (lowercaseEmail !== emailValue) {
-    document.getElementById('error').innerHTML= '*Email must be in lowercase letters!';
+    document.getElementById('error').innerHTML = '*Email must be in lowercase letters!';
     event.preventDefault();
     emailInput.value = '';
     emailInput.focus();
-    return;
   }
-
 });
 
-/*localStorage*/
+/* localStorage */
 
 // const form = document.getElementById('form');
 // let collectedInputData;

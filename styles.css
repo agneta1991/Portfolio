@@ -882,6 +882,7 @@ form {
     padding: 9%;
     padding-bottom: 0;
     width: 82vw;
+    height: auto;
   }
 
   .project-1 {
@@ -1029,13 +1030,13 @@ form {
 
   #about-myself {
     height: 60vh;
-    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: none;
     background-color: #f7f7f9;
+    margin-top: 20rem;
   }
 
   #resume {
