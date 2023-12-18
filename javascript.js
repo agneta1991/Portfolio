@@ -130,29 +130,34 @@ menuContent.forEach((individualSection) => {
 /* everything below is creting elements and adding content from array */
 
 for (let i = 0; i <= projects.length - 1; i += 1) {
-  const div = document.createElement("div");
-  div.id = `dynamic-project${i}`;
-  div.className = `project project-${i}${1}`;
-  workSection.appendChild(div);
+  const mainDiv = document.createElement("div");
+  mainDiv.id = `dynamic-project${i}`;
+  mainDiv.className = `project project-${i}${1}`;
+  workSection.appendChild(mainDiv);
 
-  const secondDiv = document.createElement("div");
-  secondDiv.id = `container${i}`;
-  secondDiv.className = "container";
-  document.getElementById(`dynamic-project${i}`).appendChild(secondDiv);
+  const imageDiv = document.createElement("div");
+  imageDiv.className = "image-container";
+  imageDiv.id = `image-container${i}`;
+  mainDiv.appendChild(imageDiv);
 
   const image = document.createElement("img");
   image.id = `image${i}`;
   image.className = "image-mobile";
   image.alt = "Project picture";
   image.src = projects[i].image_mobile;
-  document.getElementById(`container${i}`).appendChild(image);
+  document.getElementById(`image-container${i}`).appendChild(image);
 
   const dimage = document.createElement("img");
   dimage.id = `dimage${i}`;
   dimage.className = "image-desktop";
   dimage.alt = "Project picture";
   dimage.src = projects[i].image_desktop;
-  document.getElementById(`container${i}`).appendChild(dimage);
+  document.getElementById(`image-container${i}`).appendChild(dimage);
+
+  const secondDiv = document.createElement("div");
+  secondDiv.id = `container${i}`;
+  secondDiv.className = "container";
+  document.getElementById(`dynamic-project${i}`).appendChild(secondDiv);
 
   const h3 = document.createElement("h3");
   h3.id = `client-name${i}`;
@@ -167,6 +172,8 @@ for (let i = 0; i <= projects.length - 1; i += 1) {
   document.getElementById(`container${i}`).appendChild(h3desktop);
 
   const ul = document.createElement("ul");
+  ul.className = "ul";
+
   const info = projects[i].project_info_mobile;
   info.forEach((individualInfoitem) => {
     const li = document.createElement("li");
@@ -178,6 +185,8 @@ for (let i = 0; i <= projects.length - 1; i += 1) {
   document.getElementById(`container${i}`).appendChild(ul);
 
   const desktopUl = document.createElement("ul");
+  desktopUl.className = "ul";
+
   const desktopinfo = projects[i].project_info_desktop;
   desktopinfo.forEach((individualdesktop) => {
     const desktopli = document.createElement("li");
