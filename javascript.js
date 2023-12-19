@@ -55,15 +55,15 @@ const projects = [
       '<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>',
     ],
     link: "https://agneta1991.github.io/to-do-list/dist/",
-    source: "https://github.com/agneta1991/to-do-list",
+    source: "https://github.com/agneta1991/metrics-webapp",
   },
 
   {
     id: 3,
     project_name_mobile: "Social media app",
     project_name_desktop: "Social media app",
-    project_info_mobile: ["Microverse", "Back End Dev", 2023],
-    project_info_desktop: ["Microverse", "Back end", 2023],
+    project_info_mobile: ["Blog", "Back End Dev", 2023],
+    project_info_desktop: ["Blog", "Back end", 2023],
     description_mobile:
       "An app whee user can add posts, comments and likes, to theirs or other users posts",
     description_desktop:
@@ -78,7 +78,7 @@ const projects = [
       '<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>',
     ],
     link: "https://link-to-live-project.com",
-    source: "https://github.com/username/project-repository",
+    source: "https://github.com/agneta1991/social-media-app",
   },
 
   {
@@ -99,7 +99,7 @@ const projects = [
       '<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>',
     ],
     link: "https://link-to-live-project.com",
-    source: "https://github.com/username/project-repository",
+    source: "https://github.com/agneta1991/book-an-appointment-capstone",
   },
 ];
 
@@ -242,26 +242,31 @@ for (let i = 0; i <= projects.length - 1; i += 1) {
   });
   document.getElementById(`technologyDiv${i}`).appendChild(technologyUl);
 
-  const popupBtn = document.createElement("button");
-  popupBtn.className = "see-project link";
-  const textElement = document.createTextNode("See live");
-  popupBtn.appendChild(textElement);
-  popupBtn.type = "submit";
-  document.getElementById(`container${i}`).appendChild(popupBtn);
+  const popupLink = document.createElement("a");
+  popupLink.className = `see-project link${i}`;
+  popupLink.href = projects[i].link;
+  popupLink.target = "_blank";
 
-  const secongpopupBtn = document.createElement("button");
-  secongpopupBtn.className = "see-project source";
+  const textElement = document.createTextNode("See live");
+  popupLink.appendChild(textElement);
+
+  document.getElementById(`container${i}`).appendChild(popupLink);
+
+  const secongpopupLink = document.createElement("a");
+  secongpopupLink.className = "see-project source";
+  secongpopupLink.href = projects[i].source;
+  secongpopupLink.target = "_blank";
+
   const secongtextElement = document.createTextNode("See source");
-  secongpopupBtn.appendChild(secongtextElement);
-  secongpopupBtn.type = "submit";
-  document.getElementById(`container${i}`).appendChild(secongpopupBtn);
+  secongpopupLink.appendChild(secongtextElement);
+
+  document.getElementById(`container${i}`).appendChild(secongpopupLink);
 
   const clientName = document.getElementById(`desktopli${i}`);
   clientName.classList.add("name");
   const mobileClientName = document.getElementById(`li${i}`);
   mobileClientName.classList.add("name");
 }
-
 
 const contactForm = document.getElementById("contact-form");
 

@@ -266,6 +266,7 @@ h2 {
   text-shadow: 1px 1px 1px black;
   font-size: 1.1rem;
   margin-right: 1rem;
+  text-decoration: none;
 }
 
 .see-project:hover {
@@ -439,23 +440,6 @@ form {
   padding-bottom: 3%;
 }
 
-/* .nameDiv {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 0;
-  width: 80%;
-}
-
-.nameDiv > .fa-close {
-  padding: 0;
-}
-
-.buttonsContainer {
-  display: flex;
-}
-
-*/
 .fa-bars,
 .image-mobile,
 .li-mobile,
@@ -469,6 +453,11 @@ form {
   height: 5rem;
 }
 
+.link3,
+.link2,
+.link4 {
+  display: none;
+}
 @media (max-width: 500px) {
   .image-desktop,
   .client-name-desktop,
