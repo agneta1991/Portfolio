@@ -38,7 +38,8 @@ body {
 .toolbar-links > a {
   list-style: none;
   text-decoration: none;
-  color: #172b4d;
+  color: white;
+    text-shadow: 1px 1px 1px #172b4d;
 }
 
 #wrapperId {
@@ -193,7 +194,7 @@ h2 {
 }
 
 .image-container > img {
-  height: 22rem;
+  height: 17rem;
   width: auto;
 }
 
@@ -263,6 +264,7 @@ h2 {
   font-weight: 900;
   text-shadow: 1px 1px 1px black;
   font-size: 1.1rem;
+  margin-right: 1rem;
 }
 
 .see-project:hover {
@@ -444,52 +446,58 @@ form {
   height: 95vh;
   max-height: 100vh;
   top: 0;
+  z-index: 1000;
 }
 
 .popup > .container {
   background-color: #fff;
-  height: 120%;
+  width: 80vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.nameDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding-bottom: 0;
+      width: 80%;
+}
+
+.popup>.container>.ul {
+  padding-left: 2rem;
+  width: 80%;
+}
+
+.popup>.container>img {
+  width: 80%;
+  height: auto;
+  padding: 2rem;
+}
+
+.popup>.container>.buttons>ul>li {
+  margin-right: 1rem;
+}
+
+.nameDiv>.fa-close {
+  padding: 0;
 }
 
 .buttonsContainer {
   display: flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
 }
 
-.popup > .container > p {
-  font-size: 80%;
-}
-
-.popup > .container > img {
-  height: 45vw;
-  width: auto;
-  place-self: center;
-}
-
-.popup > .container > ul > li {
-  font-size: 74%;
-}
-
-.popup > .container > .nameDiv {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-}
-
-.popup > .container > .nameDiv > h3 {
-  margin: 0;
-}
-
-.popup > .container > .nameDiv > .fa-close {
-  font-size: 120%;
-  padding-right: 5%;
-}
-
+.fa-bars,
 .image-mobile,
 .li-mobile,
 .project-mobile {
   display: none;
+}
+
+.fa-close-popup {
+  display: contents;
+  height: 5rem;
 }
