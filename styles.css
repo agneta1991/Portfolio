@@ -458,6 +458,7 @@ form {
 .link4 {
   display: none;
 }
+
 @media (max-width: 500px) {
   .image-desktop,
   .client-name-desktop,
@@ -504,6 +505,7 @@ form {
 
   .about {
     font-size: 0.8rem;
+    width: 100%;
   }
 
   .lets_connect {
@@ -513,6 +515,14 @@ form {
   .image-container > img {
     width: 80%;
     height: auto;
+  }
+
+  .list-of-dropdowns {
+    display: flex;
+    flex-direction: row;
+    padding: 0.4rem;
+    width: 100%;
+    height: 100%;
   }
 
   .dropdown-content > img {
@@ -615,19 +625,22 @@ form {
     padding-right: 1rem;
   }
 
-  .list-of-dropdowns {
-    padding: 0;
-  }
-
   .dropbtn {
-    padding: 0.7rem;
-    border-bottom: 1px solid #172b4d24;
+    padding: 0.4rem;
     width: 100%;
+    height: 8rem;
     box-sizing: border-box;
+    background-color: #f7f7f9;
+    margin: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #079465;
   }
 
   .dropbtn > span {
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-style: italic;
   }
 
