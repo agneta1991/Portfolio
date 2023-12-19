@@ -49,7 +49,7 @@ const projects = [
       "This React mobile app fetches live weather updates and displays them according to user-selected countries. User-friendly design offers a filter, to have a faster search of a country. The app leverages asynchronous calls to a weather API for real-time data and utilizes React's state management to handle dynamic updates. With a user-friendly interface, the app provides an intuitive experience, allowing users to stay informed about current weather conditions effortlessly.",
     image_mobile: ["images/metrics-app.png"],
     image_desktop: ["images/metrics-app.png"],
-    technologies_mobile: ["HTML", "CSS", "React.js"],
+    technologies_mobile: ["HTML", "CSS", "React.js", "API"],
     technologies_desktop: ["HTML", "CSS", "React.js", "API"],
     linkicon: [
       '<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>',
@@ -72,7 +72,7 @@ const projects = [
       "Introducing a versatile social platform where users can seamlessly create and share posts, engage with content through comments, and express appreciation with likes. This app empowers users to personalize their digital space by not only curating their own posts but also interacting with the vibrant community through meaningful comments and likes on others' content. Connect, share, and build a dynamic online presence with our user-friendly interface.",
     image_mobile: "images/desktop-pictures/social.jpg",
     image_desktop: "images/desktop-pictures/social.jpg",
-    technologies_mobile: ["Ruby on Rails", "CSS"],
+    technologies_mobile: ["Ruby on Rails", "CSS", "API"],
     technologies_desktop: ["Ruby on Rails", "CSS", "API"],
     linkicon: [
       '<i class="fa-light fa-arrow-up-left-from-circle fa-flip-horizontal"></i>',
