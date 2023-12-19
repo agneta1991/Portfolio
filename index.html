@@ -91,7 +91,7 @@
             </p>
             <h2>LETS CONNECT</h2>
             <section class="socials">
-                <ul>
+                <ul class="ul-second">
                     <li>
                         <a href="https://github.com/agneta1991">
                             <img src="images/Vector (2).svg" alt="social media">
@@ -126,19 +126,33 @@
             <div id='right-side'>
             <div class="dropdowns">
                 <ul class="list-of-dropdowns">
-                    <li class="dropbtn"><span>Languages</span> <i class='fas right'>&#xf105;</i> <i
-                            class='fas down'>&#xf107;</i>
+                    <li class="dropbtn"><span>Languages:</span>
                         <div class="dropdown-content">
-                            <a href="javascript:void(0)"><img src="images/Ellipse 1.png"
-                                    alt="JavaScript"><span>JavaScript<span></span></a>
-                            <a href="javascript:void(0)"><img src="images/Ellipse 1 (1).png"
-                                    alt="HTML"><span>HTML</span></a>
-                            <a href="javascript:void(0)"><img src="images/Ellipse 1 (2).png"
-                                    alt="CSS"><span>CSS</span></a>
+                            <img class='languages' src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" />
+                            <img class='languages' src="https://img.icons8.com/fluency/48/html-5.png" alt="html-5" />
+                            <img sclass='languages' src="https://img.icons8.com/fluency/48/css3.png" alt="css3" />
+                            <img class='languages' src="https://img.icons8.com/color/48/ruby-programming-language.png"
+                                alt="ruby-programming-language" />
+                            <img class='languages' src="https://img.icons8.com/papercut/60/json.png" alt="json" />
                         </div>
                     </li>
-                    <li class="dropbtn"><span>Frameworks</span><i class='fas'>&#xf105;</i></li>
-                    <li class="dropbtn"><span>Skills</span><i class='fas'>&#xf105;</i></li>
+                    <li class="dropbtn"><span>Frameworks:</span>
+                        <div class="dropdown-content">
+                            <img class='frameworks' src="https://img.icons8.com/officel/48/react.png" alt="react" />
+                            <img class='frameworks' src="https://img.icons8.com/color/48/redux.png" alt="redux" />
+                            <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-rails-a-server-side-web-application-framework-written-in-ruby-logo-shadow-tal-revivo.png"
+                                alt="rails" />
+                        </div>
+                    </li>
+                    <li class="dropbtn"><span>Other Skills:</span>
+                        <div class="dropdown-content">
+                                    <img class='other-skills' src="https://img.icons8.com/color/48/api.png" alt="api" />
+                                    <img class='other-skills' src="https://img.icons8.com/fluency/48/figma.png" alt="figma" />
+                                    <img class='other-skills' src="https://img.icons8.com/color/48/ubuntu--v1.png" alt="ubuntu--v1" />
+                                    <img class='other-skills' src="https://img.icons8.com/color/48/linux--v1.png" alt="linux--v1" />
+                                    
+                                    </div>
+                                    </li>
                 </ul>
                 </div>
             </div>
@@ -154,7 +168,7 @@
                     I’d love to help with it!</p>
                 <form id='form' action="https://formspree.io/f/myyaqdnr" method="post">
                     <label for="name">
-                        <input id='text' type="text" name="name" placeholder="Enter your name" minlength="1" maxlength="30"
+                        <input id='input-text' type="text" name="name" placeholder="Enter your name" minlength="1" maxlength="30"
                             required />
                     </label>
                     <label for="email">
@@ -165,7 +179,7 @@
                             aria-multiline="1" maxlength="500" required></textarea>
                     </label>
                     <div id="error"></div>
-                    <input class="get-in-touch" type="submit" name="submit" value="Get in touch" required />
+                    <input id='submit' type="submit" name="submit" value="Get in touch" required />
                 </form>
             </div>
         </div>
