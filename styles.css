@@ -525,6 +525,11 @@ form {
     height: auto;
   }
 
+  .dropdown-content > img {
+    width: 2rem;
+    height: auto;
+  }
+
   .socials > ul > li > a > img {
     width: 1rem;
   }
@@ -581,6 +586,55 @@ form {
 
   .see-project {
     font-size: 0.7rem;
+  }
+
+  #headline-two {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  #left-side,
+  #right-side {
+    width: 100%;
+  }
+
+  #right-side {
+    margin-bottom: 5rem;
+  }
+
+  #text {
+    width: 95%;
+  }
+
+  #left-side > h2 {
+    font-size: 0.8rem;
+  }
+
+  .ul-second {
+    margin: 0;
+  }
+
+  .socials > ul > li {
+    padding: 0;
+    padding-right: 1rem;
+  }
+
+  .list-of-dropdowns {
+    padding: 0;
+  }
+
+  .dropbtn {
+    padding: 0.7rem;
+    border-bottom: 1px solid #172b4d24;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .dropbtn > span {
+    font-size: 1rem;
+    font-style: italic;
   }
 
   #form > * > * {
