@@ -44,6 +44,7 @@ body {
 
 #wrapperId {
   position: relative;
+  height: 95vh;
 }
 
 #wrapperId::before {
@@ -194,7 +195,7 @@ h2 {
 }
 
 .image-container > img {
-  height: 17rem;
+  height: 15rem;
   width: auto;
 }
 
@@ -438,27 +439,6 @@ form {
   padding-bottom: 3%;
 }
 
-.popup {
-  background-color: #c1c7d0c6;
-  backdrop-filter: blur(5px);
-  position: fixed;
-  overflow-y: auto;
-  height: 95vh;
-  max-height: 100vh;
-  top: 0;
-  z-index: 1000;
-}
-
-.popup > .container {
-  background-color: #fff;
-  width: 80vw;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-}
-
 .nameDiv {
   display: flex;
   justify-content: space-between;
@@ -467,20 +447,6 @@ form {
       width: 80%;
 }
 
-.popup>.container>.ul {
-  padding-left: 2rem;
-  width: 80%;
-}
-
-.popup>.container>img {
-  width: 80%;
-  height: auto;
-  padding: 2rem;
-}
-
-.popup>.container>.buttons>ul>li {
-  margin-right: 1rem;
-}
 
 .nameDiv>.fa-close {
   padding: 0;
@@ -493,11 +459,115 @@ form {
 .fa-bars,
 .image-mobile,
 .li-mobile,
-.project-mobile {
+.project-mobile,
+.mobile-logo {
   display: none;
 }
 
 .fa-close-popup {
   display: contents;
   height: 5rem;
+}
+@media (max-width: 500px) {
+
+  .image-desktop,
+  .client-name-desktop,
+  .li-desktop,
+  .project-desktop,
+  .toolbar-links,
+  .desktop-logo {
+    display: none;
+  }
+
+  .fa-bars,
+  .li-mobile,
+  .image-mobile,
+  .project-mobile,
+  .mobile-logo {
+    display: block;
+  }
+
+  .toolbar {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-logo {
+    width: 20%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .fa-bars {
+    color: white;
+  }
+
+  .headline {
+    padding: 2rem;
+  }
+
+  .greeting {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+  }
+
+  .about {
+    font-size: 0.8rem;
+  }
+
+  .lets_connect {
+    font-size: 0.8rem;
+  }
+
+  .socials>ul>li>a>img {
+    width: 1rem;
+  }
+
+  .project {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .image-container {
+    padding: 0;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container>img {
+    width: 80%;
+    height: auto;
+  }
+
+  .project {
+    padding: 1rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .client-name {
+    font-size: 1.5rem;
+  }
+
+  .ul {
+    width: 90%;
+    border-bottom: none;
+    padding-bottom: 0.2rem;
+    color: black;
+    font-style: italic;
+  }
+
+  .ul>.name {
+    font-size: 1rem;
+  }
+
+  #form>*>* {
+    width: 80%;
+  }
 }
