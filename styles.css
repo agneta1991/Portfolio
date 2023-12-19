@@ -439,7 +439,7 @@ form {
   padding-bottom: 3%;
 }
 
-.nameDiv {
+/* .nameDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -455,6 +455,7 @@ form {
   display: flex;
 }
 
+*/
 .fa-bars,
 .image-mobile,
 .li-mobile,
@@ -608,6 +609,10 @@ form {
     width: 95%;
   }
 
+  .wrapper-contact > div > h2 {
+    font-size: 2.2rem;
+  }
+
   #left-side > h2 {
     font-size: 0.8rem;
   }
@@ -637,7 +642,34 @@ form {
     font-style: italic;
   }
 
+  .wrapper-contact > div {
+    width: 100%;
+  }
+
+  .contact-para {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   #form > * > * {
-    width: 80%;
+    width: 90%;
+    font-size: 0.7rem;
+  }
+
+  #textaera {
+    width: 105%;
+    margin: 0;
+    margin-left: -1rem;
+  }
+
+  #submit {
+    font-size: 0.7rem;
   }
 }
