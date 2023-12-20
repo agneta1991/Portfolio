@@ -105,8 +105,9 @@ body {
 
 .mobile-menu-page {
   position: fixed;
-  background-color: #2032f4a8;
-  backdrop-filter: blur(5px);
+  background: rgba(232, 247, 154, 0.874);
+    background: linear-gradient(356deg, rgb(232, 247, 154) 0%, rgba(73, 210, 146, 0.427) 44%);
+    backdrop-filter: blur(5px);
   width: 100vw;
   height: 180vh;
   display: flex;
