@@ -12,13 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="icon" href="/images/logo-head.jpg" type="image/png">
     <title>Portfolio</title>
 </head>
 
 <body >
     <section id="wrapperId" class="wrapper-1">
         <header class="toolbar">
-            <a href="/" class="logo">My Logo</a>
+            <img src="./images/logo.jpg" alt="logo" class="logo desktop-logo">
+            <img src="./images/logo-head.jpg" alt="logo" class="logo mobile-logo">
+
             <a class="menu-logo">
                 <i id="fa-bars" class="fa-solid fa-bars"></i>
             </a>
@@ -37,41 +40,31 @@
             </div>
         </header>
         <section class="headline">
-            <h1 class="greeting">Hello World! <br>
+            <h1 class="greeting">Hello World! <img src="https://img.icons8.com/emoji/48/waving-hand-emoji.png"
+                    alt="waving-hand-emoji" /> <br>
                 I'm Agneta
             </h1>
             <p class="about">
-                Passionate about Ruby on Rails, I'm a versatile full-stack developer with a knack for crafting seamless applications. If
-                you have a project in mind or want to discuss how we can collaborate on something exciting, let's connect. Your ideas
-                deserve to be brought to life, and I'm here to help you make that happen. Get in touch, and let's start building
-                something amazing together.
+                Excited about Ruby on Rails, I'm a dynamic full-stack developer ready to bring your ideas to life! Let's collaborate on
+                something incredible. Whether you have a project in mind or just want to chat possibilities, I'm here for it. Let's
+                connect and start building amazing things together!
             </p>
             <h2 class='lets_connect'>LETS CONNECT</h2>
             <section class="socials">
                 <ul>
                     <li>
                         <a href="https://twitter.com/pupienyteA">
-                            <img src="images/Vector.svg" alt="social media">
+                            <img class="img-socials" src="images/Vector.svg" alt="social media">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/agneta-pupienyte-124a27256/?originalSubdomain=lt">
-                            <img src="images/Linkedin icon.svg" alt="social media">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/Vector (1).svg" alt="social media">
+                            <img class="img-socials" src="images/Linkedin icon.svg" alt="social media">
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/agneta1991">
-                            <img src="images/Vector (2).svg" alt="social media">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/Vector (3).svg" alt="social media">
+                            <img class="img-socials" src="images/Vector (2).svg" alt="social media">
                         </a>
                     </li>
                 </ul>
@@ -86,7 +79,7 @@
             <h3 class="greeting">About Myself
             </h3>
             <p class="about" id="text">
-                Passionate about Ruby on Rails, I'm a versatile full-stack developer with a knack for crafting seamless
+                I'm a versatile Full-Stack developer with a passion for Ruby on Rails with a knack for crafting seamless
                 applications. If
                 you have a project in mind or want to discuss how we can collaborate on something exciting, let's connect. Your
                 ideas
@@ -95,7 +88,7 @@
             </p>
             <h2>LETS CONNECT</h2>
             <section class="socials">
-                <ul>
+                <ul class="ul-second">
                     <li>
                         <a href="https://github.com/agneta1991">
                             <img src="images/Vector (2).svg" alt="social media">
@@ -107,42 +100,47 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="images/Vector (3).svg" alt="social media">
-                        </a>
-                    </li>
-                    <li>
                         <a href="https://twitter.com/pupienyteA">
                             <img src="images/Vector.svg" alt="social media">
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/Vector (1).svg" alt="social media">
-                        </a>
-
-                    </li>
                 </ul>
 
             </section>
-            <button class="see-project" id="resume" type="submit"> Get my resume</button>
+            <a href="https://docs.google.com/document/d/e/2PACX-1vSzFt08BxwINMamE2FCICZtXQwqpXGTa-GUgK2VpUkQZfWky_Gvx4OtmQuI9oNA2-aJ1SEIu6dsMJ0O/pub"
+                target="_blank" class="see-project" id="resume">
+                Get my resume
+            </a>
             </div>
             <div id='right-side'>
             <div class="dropdowns">
                 <ul class="list-of-dropdowns">
-                    <li class="dropbtn"><span>Languages</span> <i class='fas right'>&#xf105;</i> <i
-                            class='fas down'>&#xf107;</i>
+                    <li class="dropbtn"><span>Languages:</span>
                         <div class="dropdown-content">
-                            <a href="javascript:void(0)"><img src="images/Ellipse 1.png"
-                                    alt="JavaScript"><span>JavaScript<span></span></a>
-                            <a href="javascript:void(0)"><img src="images/Ellipse 1 (1).png"
-                                    alt="HTML"><span>HTML</span></a>
-                            <a href="javascript:void(0)"><img src="images/Ellipse 1 (2).png"
-                                    alt="CSS"><span>CSS</span></a>
+                            <img class='languages' src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" />
+                            <img class='languages' src="https://img.icons8.com/fluency/48/html-5.png" alt="html-5" />
+                            <img sclass='languages' src="https://img.icons8.com/fluency/48/css3.png" alt="css3" />
+                            <img class='languages' src="https://img.icons8.com/color/48/ruby-programming-language.png"
+                                alt="ruby-programming-language" />
                         </div>
                     </li>
-                    <li class="dropbtn"><span>Frameworks</span><i class='fas'>&#xf105;</i></li>
-                    <li class="dropbtn"><span>Skills</span><i class='fas'>&#xf105;</i></li>
+                    <li class="dropbtn"><span>Frameworks:</span>
+                        <div class="dropdown-content">
+                            <img class='frameworks' src="https://img.icons8.com/officel/48/react.png" alt="react" />
+                            <img class='frameworks' src="https://img.icons8.com/color/48/redux.png" alt="redux" />
+                            <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-rails-a-server-side-web-application-framework-written-in-ruby-logo-shadow-tal-revivo.png"
+                                alt="rails" />
+                        </div>
+                    </li>
+                    <li class="dropbtn"><span>Other Skills:</span>
+                        <div class="dropdown-content">
+                                    <img class='other-skills' src="https://img.icons8.com/color/48/api.png" alt="api" />
+                                    <img class='other-skills' src="https://img.icons8.com/fluency/48/figma.png" alt="figma" />
+                                    <img class='other-skills' src="https://img.icons8.com/color/48/ubuntu--v1.png" alt="ubuntu--v1" />
+                                    <img class='other-skills' src="https://img.icons8.com/color/48/linux--v1.png" alt="linux--v1" />
+                                    
+                                    </div>
+                                    </li>
                 </ul>
                 </div>
             </div>
@@ -158,7 +156,7 @@
                     I’d love to help with it!</p>
                 <form id='form' action="https://formspree.io/f/myyaqdnr" method="post">
                     <label for="name">
-                        <input id='text' type="text" name="name" placeholder="Enter your name" minlength="1" maxlength="30"
+                        <input id='input-text' type="text" name="name" placeholder="Enter your name" minlength="1" maxlength="30"
                             required />
                     </label>
                     <label for="email">
@@ -169,7 +167,7 @@
                             aria-multiline="1" maxlength="500" required></textarea>
                     </label>
                     <div id="error"></div>
-                    <input class="get-in-touch" type="submit" name="submit" value="Get in touch" required />
+                    <input id='submit' type="submit" name="submit" value="Get in touch" required />
                 </form>
             </div>
         </div>
