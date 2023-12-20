@@ -45,6 +45,8 @@ body {
 #wrapperId {
   position: relative;
   height: 95vh;
+  overflow: hidden;
+  border-radius: 0 0 0 10rem;
 }
 
 #wrapperId::before {
@@ -52,14 +54,25 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 200%;
   height: 100%;
   background-image: url('./images/logo-head.jpg');
   background-size: 10rem;
   background-repeat: repeat;
   border-radius: 0 0 0 10rem;
-  opacity: 0.1;
+  opacity: 0.15;
   z-index: -1;
+  animation: slide 120s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .headline {
@@ -70,7 +83,6 @@ body {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
-  border-radius: 0 0 0 10rem;
   padding: 5rem;
   opacity: 1;
 }
@@ -232,12 +244,13 @@ h2 {
 
 .buttons > ul {
   margin: 0;
+  margin-bottom: 1rem;
   padding: 1rem;
   padding-left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
-  width: 45%;
+  width: auto;
 }
 
 .buttons > ul > li {
@@ -252,6 +265,7 @@ h2 {
   border-color: transparent;
   text-align: center;
   text-shadow: 1px 1px 1px grey;
+  margin-right: 0.6rem;
 }
 
 .see-project {
@@ -281,6 +295,8 @@ h2 {
 
 .second-part {
   position: relative;
+  overflow: hidden;
+  border-radius: 0 10rem 0 10rem;
 }
 
 .second-part::before {
@@ -288,15 +304,25 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 200%;
   height: 100%;
   background-image: url('./images/logo-head.jpg');
   background-color: #f7f7f9;
   background-size: 10rem;
   background-repeat: repeat;
-  border-radius: 0 10rem 0 10rem;
   opacity: 0.1;
   z-index: -1;
+  animation: slide 120s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 #headline-two {
@@ -494,6 +520,11 @@ form {
     color: white;
   }
 
+  #menu-page {
+    margin-top: 10rem;
+    margin-left: -2.9rem;
+  }
+
   .headline {
     padding: 2rem;
   }
@@ -586,6 +617,10 @@ form {
 
   .see-project {
     font-size: 0.7rem;
+  }
+
+  .second-part {
+    border-radius: 0 4rem 0 4rem;
   }
 
   #headline-two {
