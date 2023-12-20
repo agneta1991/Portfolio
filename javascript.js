@@ -15,6 +15,7 @@ const projects = [
     technologies_desktop: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://agneta1991.github.io/HeavyFury/',
     source: 'https://github.com/agneta1991/Capstone_project/',
+    video: '',
   },
   {
     id: 1,
@@ -35,6 +36,7 @@ const projects = [
     ],
     link: 'https://dugetapp.onrender.com',
     source: 'https://github.com/agneta1991/Budget-app-capstone',
+    video: '',
   },
 
   {
@@ -56,6 +58,8 @@ const projects = [
     ],
     link: 'https://agneta1991.github.io/to-do-list/dist/',
     source: 'https://github.com/agneta1991/metrics-webapp',
+    video:
+      'https://www.loom.com/share/23048e90277f4704928052265775886b?sid=314d0550-cecf-483c-bf27-b59fd43869e5',
   },
 
   {
@@ -79,10 +83,11 @@ const projects = [
     ],
     link: 'https://link-to-live-project.com',
     source: 'https://github.com/agneta1991/social-media-app',
+    video: '',
   },
 
   {
-    id: 3,
+    id: 4,
     project_name_mobile: 'Book an appointment',
     project_name_desktop: 'Book an appointment',
     project_info_mobile: ['HealthClinic', 'Full-stack', 2023],
@@ -100,6 +105,8 @@ const projects = [
     ],
     link: 'https://link-to-live-project.com',
     source: 'https://github.com/agneta1991/book-an-appointment-capstone',
+    video:
+      'https://www.loom.com/share/80437268606f43ab80a2e8137114006a?sid=a53c5102-1819-40cc-9cf0-01a95fce2aaf',
   },
 ];
 
@@ -255,8 +262,17 @@ for (let i = 0; i <= projects.length - 1; i += 1) {
 
   const secongtextElement = document.createTextNode('See source');
   secongpopupLink.appendChild(secongtextElement);
-
   document.getElementById(`container${i}`).appendChild(secongpopupLink);
+
+  const secongpopupVideo = document.createElement('a');
+  secongpopupVideo.className = `see-project video${i}`;
+  secongpopupVideo.href = projects[i].video;
+  secongpopupVideo.target = '_blank';
+
+  const thirdtextElement = document.createTextNode('See video demo');
+  secongpopupVideo.appendChild(thirdtextElement);
+
+  document.getElementById(`container${i}`).appendChild(secongpopupVideo);
 
   const clientName = document.getElementById(`desktopli${i}`);
   clientName.classList.add('name');

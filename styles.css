@@ -485,6 +485,12 @@ form {
   display: none;
 }
 
+.video0,
+.video1,
+.video3 {
+  display: none;
+}
+
 @media (max-width: 500px) {
   .image-desktop,
   .client-name-desktop,
