@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 3rem 0 3rem;
-  position: sticky;
+  position: fixed;
     z-index: 999;
     width: 100%;
     box-sizing: border-box;
