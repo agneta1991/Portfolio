@@ -69,10 +69,8 @@ const projects = [
     project_info_mobile: ["Blog", "Back End Dev", 2023],
     project_info_desktop: ["Blog", "Back end", 2023],
     description_mobile:
-      "An app whee user can add posts, comments and likes, to theirs or other users posts",
-    description_desktop:
       "Introducing a versatile social platform where users can seamlessly create and share posts, engage with content through comments, and express appreciation with likes. This app empowers users to personalize their digital space by curating their own posts, comments and liking others posts.",
-    description_popup:
+    description_desktop:
       "Introducing a versatile social platform where users can seamlessly create and share posts, engage with content through comments, and express appreciation with likes. This app empowers users to personalize their digital space by not only curating their own posts but also interacting with the vibrant community through meaningful comments and likes on others' content. Connect, share, and build a dynamic online presence with our user-friendly interface.",
     image_mobile: "images/desktop-pictures/social.jpg",
     image_desktop: "images/desktop-pictures/social.jpg",
